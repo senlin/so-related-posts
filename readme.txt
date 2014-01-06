@@ -28,10 +28,6 @@ Thanks for your understanding and cooperation.
 
 == Installation ==
 
-Quick installation: [Install now](http://coveredwebservices.com/wp-plugin-install/?plugin=so-related-posts) !
-
- &hellip; OR &hellip;
-
 Go to **Plugins > Add New** in your WordPress Dashboard, do a search for "so related posts" and install it.
 
  &hellip; OR &hellip;
