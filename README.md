@@ -7,15 +7,23 @@
 ###### [Stable Version](http://wordpress.org/plugins/so-related-posts) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=63)
 
-This Addon for the [Meta Box plugin](https://github.com/rilwis/meta-box) by [Rilwis](https://github.com/rilwis/) lets the user choose one or more Related Posts from all published Posts and shows them underneath the Post.
+The SO Related Posts plugin puts you in control on what really is related content.
 
 ## Description
 
+The SO Related Posts plugin is an Addon for the fantastic [Meta Box plugin](https://github.com/rilwis/meta-box) by [Rilwis](https://github.com/rilwis/) and puts you in control on what really is related content. 
+
+With the plugin installed you will find a Related Posts box underneath the Post Editor. On the frontend the Related Posts are shown in their own class with an unordered list, right after `the_content()`. The class will use the styling of your theme and you can style it further to your own liking. 
+
+### Background
+
 For a while already I have been breeding on how to make a Related Posts plugin that doesn't query the database n times looking for related posts by tags, categories or what not. Most of the existing Related Posts plugin have an incredible (negative) impact on your site speed, so the benefits don't outweigh the costs.
 
-Instead I was thinking that it would be much more flexible too if the user can choose his/her own Related Posts from a simple Posts drop down.
+Instead I was thinking that it would be much more flexible too if the user can choose his/her own Related Posts from a simple Posts drop down menu.
 
-As the Meta Box plugin comes with both a Post field and a Repeater field, I have combined these two and made it so that you can now show as many Related Posts as you want underneath the current Post. 
+Among heaps of other very useful fields, the [Meta Box plugin](http://wordpress.org/plugins/meta-box/) by [Rilwis](http://profiles.wordpress.org/rilwis/) comes  with both a Post field and a Repeater field. I have combined these two and made it so that you can now show as many Related Posts as you want underneath the current Post. 
+
+The SO Related Posts metabox uses the [Select2](http://ivaynberg.github.io/select2/) script which results in really beautiful and functional drop down menus. Credits for this functionality must all go to Rilwis as this is already baked in the Meta Box plugin.
 
 The Addon doesn't come with any settings; you can just choose which Posts to add. The meta box is only visible in the Edit Post screen.
 
@@ -65,3 +73,13 @@ This repo is open to _any_ kind of contributions.
 ### 2014.01.06
 
 * 	first release
+
+## Screenshots
+
+Preview of the meta box in the backend and the output on the front end.
+
+![SO Related Posts meta box: Search for the related post you want to add.](assets/screenshot-1.png "SO Related Posts meta box")
+---
+![SO Related Posts meta box: Add any number of related posts.](assets/screenshot-2.png "SO Related Posts meta box")
+---
+![SO Related Posts output: You can style it to your liking.](assets/screenshot-3.png "SO Related Posts output")
