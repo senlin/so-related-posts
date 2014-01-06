@@ -7,7 +7,7 @@
 ###### [Stable Version](http://wordpress.org/plugins/so-related-posts) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=63)
 
-This Addon for the [Meta Box plugin](https://github.com/rilwis/meta-box) lets the user choose one or more Related Posts from all published Posts and shows them underneath the Post.
+This Addon for the [Meta Box plugin](https://github.com/rilwis/meta-box) by [Rilwis](https://github.com/rilwis/) lets the user choose one or more Related Posts from all published Posts and shows them underneath the Post.
 
 ## Description
 
