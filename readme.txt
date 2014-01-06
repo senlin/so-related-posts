@@ -45,7 +45,7 @@ Go to **Plugins > Add New** in your WordPress Dashboard, do a search for "so rel
 
  2. Upload the zip file via the Plugins > Add New > Upload page &hellip; OR &hellip; unpack and upload with your favourite FTP client to the /plugins/ folder.
 
- 3. Activate the plugin on the Plug-ins page.
+ 3. Activate the plugin on the Plugins page.
 
 Done!
 
