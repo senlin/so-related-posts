@@ -16,7 +16,7 @@ For a while already I have been breeding on how to make a Related Posts plugin t
 
 Instead I was thinking that it would be much more flexible too if the user can choose his/her own Related Posts from a simple Posts drop down.
 
-As the Meta Box plugin comes with both a Post field and a Repeater field, I have combined these two and made it so that you can now show as many Related Posts as you want underneath the current Post. 
+As the [Meta Box plugin](http://wordpress.org/plugins/meta-box/) by [Rilwis](http://profiles.wordpress.org/rilwis/) already comes with both a Post field and a Repeater field, I have combined these two and made it so that you can now show as many Related Posts as you want underneath the current Post. 
 
 The Addon doesn't come with any settings; you can just choose which Posts to add. The meta box is only visible in the Edit Post screen.
 
@@ -32,7 +32,7 @@ Quick installation: [Install now](http://coveredwebservices.com/wp-plugin-instal
 
  &hellip; OR &hellip;
 
-Go to **Plugins > Add New** in your WordPress Dashboard, do a search for "so remove wpml menu sync" and install it.
+Go to **Plugins > Add New** in your WordPress Dashboard, do a search for "so related posts" and install it.
 
  &hellip; OR &hellip;
 
@@ -50,7 +50,7 @@ Done!
 
 = Where are the Settings? =
 
-You can stop looking, there are no settings. The Addon just works in the background.
+You can stop looking, there are no settings. When you go into your Post Edit screen, you will see the Related Posts Metabox where you can choose Related Posts for your current Post.
 
 = Why is the plugin showing an error message after activation? =
 
