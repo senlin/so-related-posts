@@ -35,6 +35,10 @@ msgstr ""
 msgid "Choose one or more Related Post(s) you want to show."
 msgstr ""
 
+#: so-related-posts.php:185
+msgid "Please select..."
+msgstr ""
+
 #: so-related-posts.php:213
 msgid "Related Posts:"
 msgstr ""
