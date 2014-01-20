@@ -1,6 +1,6 @@
 # SO Related Posts
 
-###### Last updated on 2014.01.07
+###### Last updated on 2014.01.20
 ###### requires at least WordPress 3.6
 ###### tested up to WordPress 3.9-alpha
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -69,6 +69,10 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2014.01.20
+
+* added Development branch
 
 ### 2014.01.07
 
