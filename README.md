@@ -11,9 +11,11 @@ The SO Related Posts plugin puts you in control on what really is related conten
 
 ## Description
 
-The SO Related Posts plugin is an Addon for the fantastic [Meta Box plugin](https://github.com/rilwis/meta-box) by [Rilwis](https://github.com/rilwis/) and puts you in control on what really is related content. 
+The SO Related Posts plugin is an Extension for the fantastic [Meta Box plugin](https://github.com/rilwis/meta-box) by [Rilwis](https://github.com/rilwis/) and puts you in control on what really is related content. 
 
 With the plugin installed you will find a Related Posts box underneath the Post Editor. On the frontend the Related Posts are shown in their own class with an unordered list, right after `the_content()`. The class will use the styling of your theme and you can style it further to your own liking. 
+
+Since 2014.01.20 I added a method to install the Meta Box plugin (where this extension depends on), instantly from within your website.
 
 ### Background
 
@@ -35,7 +37,7 @@ You can stop looking, there are no settings. When you go into your Post Edit scr
 
 ### Why is the plugin showing an error message after activation?
 
-This plugin is an Addon for the [Meta Box plugin](http://www.deluxeblogtips.com/meta-box/). If you don't have that installed, this Addon is useless, so better not install it.
+This plugin is an Addon for the [Meta Box plugin](http://www.deluxeblogtips.com/meta-box/). If you don't have that installed, this Addon is useless. If you click on the link that shows with the error message you will go to a new page "Required Plugin" to install the Meta Box plugin.
 
 ### I don't like the output on my Single Post, can I change anything?
 
@@ -73,6 +75,7 @@ This repo is open to _any_ kind of contributions.
 ### 2014.01.20
 
 * added Development branch
+* integrated TGM Plugin Activation class by Thomas Griffin - https://github.com/thomasgriffin/TGM-Plugin-Activation
 
 ### 2014.01.07
 
