@@ -12,7 +12,7 @@ The SO Related Posts plugin puts you in control on what really is related conten
 
 == Description ==
 
-The SO Related Posts plugin is an Addon for the fantastic [Meta Box plugin](http://wordpress.org/plugins/meta-box/) by [Rilwis](http://profiles.wordpress.org/rilwis/) and puts you in control on what really is related content. 
+The SO Related Posts plugin is an Extension for the fantastic [Meta Box plugin](http://wordpress.org/plugins/meta-box/) by [Rilwis](http://profiles.wordpress.org/rilwis/) and puts you in control on what really is related content. 
 
 With the plugin installed you will find a Related Posts box underneath the Post Editor. On the frontend the Related Posts are shown in their own class with an unordered list, right after `the_content()`. The class will use the styling of your theme and you can style it further to your own liking.
 
@@ -28,7 +28,7 @@ Among heaps of other very useful fields, the [Meta Box plugin](http://wordpress.
 
 The SO Related Posts metabox uses the [Select2](http://ivaynberg.github.io/select2/) script which results in really beautiful and functional drop down menus. Credits for this functionality must all go to Rilwis as this is already baked in the Meta Box plugin.
 
-The Addon doesn't come with any settings; you can just choose which Posts to add. The meta box is only visible in the Edit Post screen.
+The Extension doesn't come with any settings; you can just choose which Posts to add. The meta box is only visible in the Edit Post screen.
 
 I have decided to only support this plugin through [Github](https://github.com/senlin/so-related-posts/issues). Therefore, if you have any questions, need help and/or want to make a feature request, please open an issue over at Github. You can also browse through open and closed issues to find what you are looking for and perhaps even help others.
 
@@ -62,7 +62,7 @@ You can stop looking, there are no settings. When you go into your Post Edit scr
 
 = Why is the plugin showing an error message after activation? =
 
-This plugin is an Addon for the [Meta Box plugin](http://www.deluxeblogtips.com/meta-box/). If you don't have that installed, this Addon is useless. If you click on the link that shows with the error message you will go to a new page "Required Plugin" to install the Meta Box plugin.
+This plugin is an Extension for the [Meta Box plugin](http://www.deluxeblogtips.com/meta-box/). If you don't have that installed, this Extension is useless. If you click on the link that shows with the error message you will go to a new page "Required Plugin" to install the Meta Box plugin.
 
 = I don't like the output on my Single Post, can I change anything? =
 

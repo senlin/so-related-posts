@@ -37,7 +37,7 @@ You can stop looking, there are no settings. When you go into your Post Edit scr
 
 ### Why is the plugin showing an error message after activation?
 
-This plugin is an Addon for the [Meta Box plugin](http://www.deluxeblogtips.com/meta-box/). If you don't have that installed, this Addon is useless. If you click on the link that shows with the error message you will go to a new page "Required Plugin" to install the Meta Box plugin.
+This plugin is an Extension for the [Meta Box plugin](http://www.deluxeblogtips.com/meta-box/). If you don't have that installed, this Extension is useless. If you click on the link that shows with the error message you will go to a new page "Required Plugin" to install the Meta Box plugin.
 
 ### I don't like the output on my Single Post, can I change anything?
 
