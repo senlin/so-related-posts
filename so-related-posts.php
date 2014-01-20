@@ -3,7 +3,7 @@
  * Plugin Name: SO Related Posts
  * Plugin URI: http://so-wp.com/?p=63
  * Description: This plugin lets the user choose the Related Posts from all published Posts. The plugin is an Addon for the Meta Box plugin by Rilwis and therefore cannot function without the latter being installed too.
- * Version: 2014.01.07
+ * Version: 2014.01.20
  * Author: Piet Bos
  * Author URI: http://senlinonline.com
  * Text Domain: so-related-posts
@@ -141,13 +141,22 @@ function so_no_meta_box_warning() {
     echo '<div class="message error"><p>';
     
     printf( __( 'The <strong>SO Related Posts plugin</strong> only works if you have the <a href="%s">Meta Box</a> plugin installed.', 'so-related-posts' ), 
-        'http://www.deluxeblogtips.com/meta-box/' );
+		admin_url( 'plugins.php?page=install-required-plugin' )
+	);
     
     echo '</p></div>';
     
-    // and deactivate the plugin
-    deactivate_plugins( plugin_basename( __FILE__ ) );
+    // @modified 2014.01.20
+    // no longer deactivate the plugin, instead include TGM Activation Class
+    //deactivate_plugins( plugin_basename( __FILE__ ) );
 }
+
+/**
+ * Include the TGM Activation Class
+ *
+ * @since 2014.01.20
+ */
+require_once dirname( __FILE__ ) . '/inc/required-plugin.php';
 
 /**
  * The actual SO Related Posts plugin files start here
