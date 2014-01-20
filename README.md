@@ -27,7 +27,7 @@ Among heaps of other very useful fields, the [Meta Box plugin](http://wordpress.
 
 The SO Related Posts metabox uses the [Select2](http://ivaynberg.github.io/select2/) script which results in really beautiful and functional drop down menus. Credits for this functionality must all go to Rilwis as this is already baked in the Meta Box plugin.
 
-The Addon doesn't come with any settings; you can just choose which Posts to add. The meta box is only visible in the Edit Post screen.
+The Extension doesn't come with any settings; you can just choose which Posts to add. The meta box is only visible in the Edit Post screen.
 
 ## Frequently Asked Questions
 
