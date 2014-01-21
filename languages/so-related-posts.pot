@@ -18,13 +18,13 @@ msgstr ""
 #: so-related-posts.php:78
 #, php-format
 msgid ""
-"<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></div>"
+"<div class="error"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></div>"
 msgstr ""
 
 #: so-related-posts.php:143
 #, php-format
 msgid ""
-"The <strong>SO Related Posts plugin</strong> only works if you have the <a href=\"%s\">Meta Box</a> plugin installed."
+"The <strong>SO Related Posts plugin</strong> only works if you have the <a href="%s">Meta Box</a> plugin installed."
 msgstr ""
 
 #: so-related-posts.php:173
