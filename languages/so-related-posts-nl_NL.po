@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SO Related Posts\n"
 "POT-Creation-Date: 2014-01-06 01:24+0800\n"
-"PO-Revision-Date: 2014-01-06 01:25+0800\n"
+"PO-Revision-Date: 2014-01-21 15:34+0800\n"
 "Last-Translator: Piet Bos <piet@senlinonline.com>\n"
 "Language-Team: Piet Bos <piet@senlinonline.com>\n"
 "Language: en\n"
@@ -21,27 +21,32 @@ msgstr ""
 #: so-related-posts.php:78
 #, php-format
 msgid ""
-"<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></div>"
+"<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></"
+"div>"
 msgstr ""
+"<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> is uitgeschakeld.</p></div>"
 
 #: so-related-posts.php:143
 #, php-format
 msgid ""
-"The <strong>SO Related Posts plugin</strong> only works if you have the <a href=\"%s\">Meta Box</a> plugin installed."
+"The <strong>SO Related Posts plugin</strong> only works if you have the <a "
+"href=\"%s\">Meta Box</a> plugin installed."
 msgstr ""
+"De <strong>SO Related Posts plugin</strong> werkt alleen wanneer je de <a "
+"href=\"%s\">Meta Box</a> plugin hebt geïnstalleerd."
 
 #: so-related-posts.php:173
 msgid "Related Posts"
-msgstr ""
+msgstr "Gerelateerde artikelen"
 
 #: so-related-posts.php:180
 msgid "Choose one or more Related Post(s) you want to show."
-msgstr ""
+msgstr "Kies één of meerdere gerelateerde artikel(en) die je wilt laten zien."
 
 #: so-related-posts.php:185
 msgid "Please select..."
-msgstr ""
+msgstr "Maak een keuze..."
 
 #: so-related-posts.php:213
 msgid "Related Posts:"
-msgstr ""
+msgstr "Gerelateerde artikelen:"
