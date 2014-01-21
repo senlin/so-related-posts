@@ -72,6 +72,10 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
+### upcoming release
+
+* add Dutch language files (po/mo)
+
 ### 2014.01.20
 
 * added Development branch
