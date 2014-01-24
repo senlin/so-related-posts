@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SO Related Posts\n"
-"POT-Creation-Date: 2014-01-06 01:24+0800\n"
-"PO-Revision-Date: 2014-01-21 15:34+0800\n"
+"POT-Creation-Date: 2014-01-24 14:24+0800\n"
+"PO-Revision-Date: 2014-01-24 16:03+0800\n"
 "Last-Translator: Piet Bos <piet@senlinonline.com>\n"
 "Language-Team: Piet Bos <piet@senlinonline.com>\n"
-"Language: en\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,35 +18,381 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: so-related-posts.php:78
-#, php-format
-msgid ""
-"<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></"
-"div>"
-msgstr ""
-"<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> is uitgeschakeld.</p></div>"
+#. Plugin Name of the plugin/theme
+msgid "SO Related Posts"
+msgstr "SO Related Posts"
 
-#: so-related-posts.php:143
-#, php-format
-msgid ""
-"The <strong>SO Related Posts plugin</strong> only works if you have the <a "
-"href=\"%s\">Meta Box</a> plugin installed."
-msgstr ""
-"De <strong>SO Related Posts plugin</strong> werkt alleen wanneer je de <a "
-"href=\"%s\">Meta Box</a> plugin hebt geïnstalleerd."
+#. Plugin URI of the plugin/theme
+msgid "http://so-wp.com/?p=63"
+msgstr "http://so-wp.com/?p=63"
 
-#: so-related-posts.php:173
+#. Description of the plugin/theme
+msgid ""
+"This plugin lets the user choose the Related Posts from all published Posts. "
+"The plugin is an Addon for the Meta Box plugin by Rilwis and therefore "
+"cannot function without the latter being installed too."
+msgstr ""
+"Deze plugin laat de gebruiker gerelateerde artikelen kiezen van alle "
+"gepubliceerde artikelen. De plugin is een addon voor de Meta Box plugin van "
+"Rilwis en functioneert daarom niet als die laatste niet is geïnstalleerd."
+
+#. Author of the plugin/theme
+msgid "Piet Bos"
+msgstr "Piet Bos"
+
+#. Author URI of the plugin/theme
+msgid "http://senlinonline.com"
+msgstr "http://senlinonline.com"
+
+#: so-related-posts.php:78 so-related-posts.php:143 so-related-posts.php:182
+#, php-format
 msgid "Related Posts"
 msgstr "Gerelateerde artikelen"
 
-#: so-related-posts.php:180
+#: so-related-posts.php:189
 msgid "Choose one or more Related Post(s) you want to show."
 msgstr "Kies één of meerdere gerelateerde artikel(en) die je wilt laten zien."
 
-#: so-related-posts.php:185
+#: so-related-posts.php:198
 msgid "Please select..."
 msgstr "Maak een keuze..."
 
-#: so-related-posts.php:213
+#: so-related-posts.php:227
 msgid "Related Posts:"
 msgstr "Gerelateerde artikelen:"
+
+#: inc/class-tgm-plugin-activation.php:155
+msgid "Install Required Plugins"
+msgstr "Installeer de vereiste plugins"
+
+#: inc/class-tgm-plugin-activation.php:156
+msgid "Install Plugins"
+msgstr "Installeer de plugins"
+
+#: inc/class-tgm-plugin-activation.php:157 inc/required-plugin.php:79
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Plugin %s aan het installeren"
+
+#: inc/class-tgm-plugin-activation.php:158
+msgid "Something went wrong."
+msgstr "Er is iets mis gegaan"
+
+#: inc/class-tgm-plugin-activation.php:161 inc/required-plugin.php:82
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugin te "
+"installeren. Neem contact op met de administrator van deze site voor hulp "
+"met het installeren van de plugin."
+msgstr[1] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugins te "
+"installeren. Neem contact op met de administrator van deze site voor hulp "
+"met het installeren van de plugins."
+
+#: inc/class-tgm-plugin-activation.php:162 inc/required-plugin.php:83
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "De volgende vereiste plugin is op het moment niet actief: %1$s."
+msgstr[1] "De volgende vereiste plugins zijn op het moment niet actief: %1$s."
+
+#: inc/class-tgm-plugin-activation.php:163
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "De volgende aanbevolen plugin is op het moment niet actief: %1$s."
+msgstr[1] ""
+"De volgende aanbevolen plugins zijn op het moment niet actief: %1$s."
+
+#: inc/class-tgm-plugin-activation.php:164 inc/required-plugin.php:84
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugin te activeren. "
+"Neem contact op met de administrator van deze site voor hulp met het "
+"activeren van de plugin."
+msgstr[1] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugins te activeren. "
+"Neem contact op met de administrator van deze site voor hulp met het "
+"activeren van de plugins."
+
+#: inc/class-tgm-plugin-activation.php:166 inc/required-plugin.php:86
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugin te updaten. "
+"Neem contact op met de administrator van deze site voor hulp met het updaten "
+"van de plugin."
+msgstr[1] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugins te updaten. "
+"Neem contact op met de administrator van deze site voor hulp met het updaten "
+"van de plugins."
+
+#: inc/class-tgm-plugin-activation.php:167 inc/required-plugin.php:87
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Start het installeren van de plugin"
+msgstr[1] "Start het installeren van de plugins"
+
+#: inc/class-tgm-plugin-activation.php:168 inc/required-plugin.php:88
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] "Activeer de geïnstalleerde plugin."
+msgstr[1] "Activeer de geïnstalleerde plugins."
+
+#: inc/class-tgm-plugin-activation.php:169
+msgid "Return to Required Plugins Installer"
+msgstr "Terug naar de Vereiste Plugins Installer"
+
+#: inc/class-tgm-plugin-activation.php:170
+msgid "Return to the dashboard"
+msgstr "Terug naar het dashboard"
+
+#: inc/class-tgm-plugin-activation.php:171
+#: inc/class-tgm-plugin-activation.php:1840
+msgid "Plugin activated successfully."
+msgstr "Plugin met success geactiveerd."
+
+#: inc/class-tgm-plugin-activation.php:172
+#: inc/class-tgm-plugin-activation.php:1538
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "De volgende plugin is met succes geactiveerd:"
+msgstr[1] "De volgende plugins zijn met succes geactiveerd:"
+
+#: inc/class-tgm-plugin-activation.php:173
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Alle plugins zijn met succes geïnstalleerd en geactiveerd. %1$s"
+
+#: inc/class-tgm-plugin-activation.php:174
+msgid "Dismiss this notice"
+msgstr "Sluit dit bericht"
+
+#: inc/class-tgm-plugin-activation.php:1085
+msgid "External Link"
+msgstr "Externe link"
+
+#: inc/class-tgm-plugin-activation.php:1090
+msgid "Private Repository"
+msgstr "Privé Repository"
+
+#: inc/class-tgm-plugin-activation.php:1093
+msgid "Pre-Packaged"
+msgstr "Voorverpakt"
+
+#: inc/class-tgm-plugin-activation.php:1097
+msgid "WordPress Repository"
+msgstr "WordPress Repository"
+
+#: inc/class-tgm-plugin-activation.php:1100
+msgid "Required"
+msgstr "Vereist"
+
+#: inc/class-tgm-plugin-activation.php:1100
+msgid "Recommended"
+msgstr "Aanbevolen"
+
+#: inc/class-tgm-plugin-activation.php:1103
+msgid "Not Installed"
+msgstr "Niet geïnstalleerd"
+
+#: inc/class-tgm-plugin-activation.php:1105
+msgid "Installed But Not Activated"
+msgstr "Geïnstalleerd maar niet geactiveerd"
+
+#: inc/class-tgm-plugin-activation.php:1275
+#: inc/class-tgm-plugin-activation.php:1291
+#, php-format
+msgid "Plugin"
+msgstr "Plugin"
+
+#: inc/class-tgm-plugin-activation.php:1292
+msgid "Source"
+msgstr "Bron"
+
+#: inc/class-tgm-plugin-activation.php:1293
+msgid "Type"
+msgstr "Type"
+
+#: inc/class-tgm-plugin-activation.php:1294
+msgid "Status"
+msgstr "Status"
+
+#: inc/class-tgm-plugin-activation.php:1312
+msgid "Install"
+msgstr "Installeer"
+
+#: inc/class-tgm-plugin-activation.php:1313
+msgid "Activate"
+msgstr "Activeer"
+
+#: inc/class-tgm-plugin-activation.php:1823
+msgid "Install package not available."
+msgstr "Het installatie pakket is niet beschikbaar."
+
+#: inc/class-tgm-plugin-activation.php:1824
+#: inc/class-tgm-plugin-activation.php:1825
+#, php-format
+msgid "Unpacking the package&#8230;"
+msgstr "Bezig met uitpakken&#8230;"
+
+#: inc/class-tgm-plugin-activation.php:1826
+msgid "Installing the plugin&#8230;"
+msgstr "Bezig met installeren van de plugin&#8230;"
+
+#: inc/class-tgm-plugin-activation.php:1827
+msgid "Plugin install failed."
+msgstr "Het installeren van de plugin is mislukt."
+
+#: inc/class-tgm-plugin-activation.php:1828
+msgid "Plugin installed successfully."
+msgstr "De plugin is met success geïnstalleerd."
+
+#: inc/class-tgm-plugin-activation.php:1839
+msgid "Plugin activation failed."
+msgstr "Het activeren van de plugin is mislukt."
+
+#: inc/class-tgm-plugin-activation.php:1949
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Het installatie en activering proces begint. Dit proces kan een tijdje duren "
+"op sommige hosts, dus wees geduldig."
+
+#: inc/class-tgm-plugin-activation.php:1950
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s is met success geïnstalleerd en geactiveerd."
+
+#: inc/class-tgm-plugin-activation.php:1950
+#: inc/class-tgm-plugin-activation.php:1959
+msgid "Show Details"
+msgstr "Laat de details zien"
+
+#: inc/class-tgm-plugin-activation.php:1950
+#: inc/class-tgm-plugin-activation.php:1959
+msgid "Hide Details"
+msgstr "Verberg de details"
+
+#: inc/class-tgm-plugin-activation.php:1951
+msgid "All installations and activations have been completed."
+msgstr "Alle installaties en activeringen zijn voltooid."
+
+#: inc/class-tgm-plugin-activation.php:1952
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Plugin %1$s (%2$d/%3$d) aan het installeren en activeren"
+
+#: inc/class-tgm-plugin-activation.php:1956
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Het installatie proces begint. Dit proces kan een tijdje duren op sommige "
+"hosts, dus wees geduldig."
+
+#: inc/class-tgm-plugin-activation.php:1957
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+"Er is een fout opgetreden tijdens het installeren van %1$s: <strong>%2$s</"
+"strong>."
+
+#: inc/class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "De installatie van %1$s  is mislukt."
+
+#: inc/class-tgm-plugin-activation.php:1959
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s is met succes geïnstalleerd."
+
+#: inc/class-tgm-plugin-activation.php:1960
+msgid "All installations have been completed."
+msgstr "Alle installaties zijn voltooid."
+
+#: inc/class-tgm-plugin-activation.php:1961
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Plugin %1$s (%2$d/%3$d) aan het installeren"
+
+#: inc/class-tgm-plugin-activation.php:2052
+msgid "Return to the Dashboard"
+msgstr "Terug naar het Dashboard"
+
+#: inc/class-tgm-plugin-activation.php:2052
+msgid "Return to the Plugins Menu"
+msgstr "Terug naar het Plugins Menu"
+
+#: inc/required-plugin.php:77
+msgid "Install Required Plugin"
+msgstr "Installeer de vereiste plugin"
+
+#: inc/required-plugin.php:78
+msgid "Required Plugin"
+msgstr "Vereiste Plugin"
+
+#: inc/required-plugin.php:80
+msgid "Something went wrong with the plugin API."
+msgstr "Er is iets misgegaan met de Plugin API."
+
+#: inc/required-plugin.php:81
+#, php-format
+msgid "The SO Related Posts plugin requires the following plugin: %1$s."
+msgid_plural ""
+"The SO Related Posts plugin requires the following plugins: %1$s."
+msgstr[0] "De SO Related Posts plugin vereist de volgende plugin: %1$s."
+msgstr[1] "De SO Related Posts plugin vereist de volgende plugins: %1$s."
+
+#: inc/required-plugin.php:85
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with the SO Related Posts plugin: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with the SO Related Posts plugin: %1$s."
+msgstr[0] ""
+"De volgende plugin dient te worden bijgewerkt tot de nieuwste versie om "
+"maximale compatibiliteit met de SO Related Posts plugin te garanderen: %1$s."
+msgstr[1] ""
+"De volgende plugins dienen te worden bijgewerkt tot hun nieuwste versie om "
+"maximale compatibiliteit met de SO Related Posts plugin te garanderen: %1$s."
+
+#: inc/required-plugin.php:89
+msgid "Return to Plugins Menu"
+msgstr "Terug naar het Plugins Menu"
+
+#: inc/required-plugin.php:90
+msgid "The Meta Box plugin has been successfully activated."
+msgstr "De Meta Box plugin is met succes geactiveerd."
+
+#: inc/required-plugin.php:91
+#, php-format
+msgid "The Meta Box plugin has been successfully installed and activated. %s"
+msgstr "De Meta Box plugin is met succes geïnstalleerd en geactiveerd. %s"

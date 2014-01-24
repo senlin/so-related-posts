@@ -79,6 +79,11 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 
 == Changelog ==
 
+= 2014.01.24 =
+
+* add Dutch language files (.po/.mo)
+* add .pot file
+
 = 2014.01.20 =
 
 * integrated TGM Plugin Activation class by Thomas Griffin - https://github.com/thomasgriffin/TGM-Plugin-Activation
