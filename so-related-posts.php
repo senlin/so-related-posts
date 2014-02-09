@@ -212,25 +212,32 @@ function so_register_meta_boxes( $meta_boxes )
  * Place the output at the bottom of the_content()
  * The output comes in its own class, so you can customise it with CSS all you want.
  *
+ * Improved by changing priority from 1 to 5, add conditional is_main_query(), unset foreach call and esc text/url/title-strings
+ *
  * @since 2014.01.06
+ * @improved 2014.02.09
  */
-add_filter ( 'the_content', 'so_related_posts_output', 1 );
+add_filter ( 'the_content', 'so_related_posts_output', 5 );
 
 function so_related_posts_output( $content ) {
 
-	if ( is_single() ) {
+	// @since 2014.02.09 added is_main_query() to make sure that Related Posts don't show elsewhere
+	if ( is_main_query() && is_single() ) {
 
 		$so_related_posts = rwmb_meta( 'so_related_posts', 'type=select_advanced' ); 
 
 		if( ! empty( $so_related_posts ) ) {
 		
-			$content .= '<div class="so-related-posts"><h4>' . __( 'Related Posts:', 'so-related-posts' ) . '</h4><ul class="related-posts">';
+			$content .= '<div class="so-related-posts"><h4>' . esc_attr_e( __( 'Related Posts:', 'so-related-posts' ) ) . '</h4><ul class="related-posts">';
 			
 			foreach ( $so_related_posts as $so_related_post ) {
 				
-				$content .= '<li><a href="' . get_permalink( $so_related_post ) . '" title="' . get_the_title( $so_related_post ) . '">' . get_the_title( $so_related_post ) . '</a></li>';
+				$content .= '<li><a href="' . esc_url( get_permalink( $so_related_post ) ) . '" title="' . esc_attr( get_the_title( $so_related_post ) ) . '">' . esc_attr( get_the_title( $so_related_post ) ) . '</a></li>';
 			
 			};
+			
+			// @since 2014.02.09
+			unset( $so_related_post );
 			
 			$content .= '</ul></div>';
 
