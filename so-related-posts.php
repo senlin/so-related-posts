@@ -228,7 +228,7 @@ function so_related_posts_output( $content ) {
 
 		if( ! empty( $so_related_posts ) ) {
 		
-			$content .= '<div class="so-related-posts"><h4>' . esc_attr_e( __( 'Related Posts:', 'so-related-posts' ) ) . '</h4><ul class="related-posts">';
+			$content .= '<div class="so-related-posts"><h4>' . esc_attr__( 'Related Posts:', 'so-related-posts' ) . '</h4><ul class="related-posts">';
 			
 			foreach ( $so_related_posts as $so_related_post ) {
 				
