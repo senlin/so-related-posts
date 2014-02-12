@@ -85,6 +85,7 @@ function so_check_admin_notices()
 /**
  *
  * @since 2014.01.06
+ * @modified 2014.02.12
  */
 class SORP_Load {
 
@@ -95,8 +96,55 @@ class SORP_Load {
 		/* Set up an empty class for the global $so_pinyinslugs object. */
 		$sorp = new stdClass;
 
+		/* Set the init. */
+		add_action( 'admin_init', array( &$this, 'init' ), 1 );
+
+		/* Set the constants needed by the plugin. */
+		add_action( 'plugins_loaded', array( &$this, 'constants' ), 2 );
+
 		/* Internationalize the text strings used. */
-		add_action( 'admin_init', array( &$this, 'i18n' ), 1 );
+		add_action( 'plugins_loaded', array( &$this, 'i18n' ), 3 );
+
+		/* Load the functions files. */
+		add_action( 'plugins_loaded', array( &$this, 'includes' ), 4 );
+
+		/* Load the admin files. */
+		add_action( 'plugins_loaded', array( &$this, 'admin' ), 5 );
+
+	}
+
+	/**
+	 * Init plugin options to white list our options
+	 *
+	 * @since 2014.02.12
+	 */
+	function init() {
+		
+		register_setting( 'sorp_plugin_options', 'sorp_options', 'sorp_validate_options' );
+		
+	}
+
+	/**
+	 * Defines constants used by the plugin.
+	 *
+	 * @since 2014.02.12
+	 */
+	function constants() {
+
+		/* Set the version number of the plugin. */
+		define( 'SORP_VERSION', '2014.02.12' );
+
+		/* Set constant path to the plugin directory. */
+		define( 'SORP_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
+
+		/* Set constant path to the plugin URL. */
+		define( 'SORP_URI', trailingslashit( plugin_dir_url( __FILE__ ) ) );
+
+		/* Set the constant path to the inc directory. */
+		define( 'SORP_INCLUDES', SORP_DIR . trailingslashit( 'inc' ) );
+
+		/* Set the constant path to the admin directory. */
+		define( 'SORP_ADMIN', SORP_DIR . trailingslashit( 'admin' ) );
 
 	}
 
@@ -111,13 +159,39 @@ class SORP_Load {
 		load_plugin_textdomain( 'so-related-posts', false, basename( dirname( __FILE__ ) ) . '/languages/' );
 	}
 
+	/**
+	 * Loads the initial files needed by the plugin.
+	 *
+	 * @since 2014.02.12
+	 */
+	function includes() {
+
+		/* Load the plugin functions file. */
+		require_once( SORP_INCLUDES . 'functions.php' );
+	}
+
+	/**
+	 * Loads the admin functions and files.
+	 *
+	 * @since 2014.02.12
+	 */
+	function admin() {
+
+		/* Only load files if in the WordPress admin. */
+		if ( is_admin() ) {
+
+			/* Load the main admin file. */
+			require_once( SORP_ADMIN . 'settings.php' );
+
+		}
+	}
 }
 
 $sorp_load = new SORP_Load();
 
 /**
  * This function checks whether the Meta Box plugin is active (it needs to be active for this to have any use)
- * and gives a warning message with link to plugin homepage if it is not active.
+ * and redirects to inc/required-plugin.php script if it is not active.
  *
  * modified using http://wpengineer.com/1657/check-if-required-plugin-is-active/ and the _no_wpml_warning function (of WPML)
  *
@@ -131,11 +205,11 @@ $required_plugin = 'meta-box/meta-box.php';
 // multisite throws the error message by default, because the plugin is installed on the network site, therefore check for multisite
 if ( ! in_array( $required_plugin , $plugins ) && ! is_multisite() ) {
 
-	add_action( 'admin_notices', 'so_no_meta_box_warning' );
+	add_action( 'admin_notices', 'sorp_no_meta_box_warning' );
 
 }
 
-function so_no_meta_box_warning() {
+function sorp_no_meta_box_warning() {
     
     // display the warning message
     echo '<div class="message error"><p>';
@@ -146,9 +220,6 @@ function so_no_meta_box_warning() {
     
     echo '</p></div>';
     
-    // @modified 2014.01.20
-    // no longer deactivate the plugin, instead include TGM Activation Class
-    //deactivate_plugins( plugin_basename( __FILE__ ) );
 }
 
 /**
@@ -159,93 +230,99 @@ function so_no_meta_box_warning() {
 require_once dirname( __FILE__ ) . '/inc/required-plugin.php';
 
 /**
- * The actual SO Related Posts plugin files start here
- * For the function so_register_meta_boxes below I have taken the [demo.php file](https://github.com/rilwis/meta-box/blob/master/demo/demo.php) 
- * of the Meta Box plugin and adapted it for the specific purpose of this SO Related Posts Plugin.
- *
- * @since 2014.01.06
+ * Register activation/deactivation hooks
+ * @since 2014.02.12
  */
+register_activation_hook( __FILE__, 'sorp_add_defaults' ); 
+register_deactivation_hook( __FILE__, 'sorp_delete_plugin_options' );
+
+add_action( 'admin_menu', 'sorp_add_options_page' );
+
+function sorp_add_options_page() {
+	// Add the new admin menu and page and save the returned hook suffix
+	$hook = add_options_page( 'SO Related Posts Settings', 'SO Related Posts', 'manage_options', __FILE__, 'sorp_render_form' );
+	// Use the hook suffix to compose the hook and register an action executed when plugin's options page is loaded
+	add_action( 'admin_print_styles-' . $hook , 'sorp_load_settings_style' );
+}
+
+
+/**
+ * Define default option settings
+ * @since 2014.02.12
+ */
+function sorp_add_defaults() {
+	
+	$tmp = get_option( 'sorp_options' );
+	
+	if ( ( $tmp['chk_default_options_db'] == '1' ) || ( ! is_array( $tmp ) ) ) {
+		
+		delete_option( 'sorp_options' ); // so we don't have to reset all the 'off' checkboxes too! (don't think this is needed but leave for now)
+		
+		$arr = array(
+			'sorp_title' => __( 'Related Posts', 'so-related-posts' ),
+			'chk_default_options_db' => ''
+		);
+		
+		update_option( 'sorp_options', $arr );
+	}
+}
+
+/**
+ * Delete options table entries ONLY when plugin deactivated AND deleted 
+ * @since 2014.02.12
+ */
+function sorp_delete_plugin_options() {
+	
+	delete_option( 'sorp_options' );
+	
+}
+
+/**
+ * Register and enqueue the settings stylesheet
+ * @since 2014.02.12
+ */
+function sorp_load_settings_style() {
+
+	wp_register_style( 'custom_sorp_settings_css', SORP_URI . 'css/settings.css', false, SORP_VERSION );
+
+	wp_enqueue_style( 'custom_sorp_settings_css' );
+
+}
+
+/**
+ * Set-up Action and Filter Hooks
+ * @since 2014.02.12
+ */
+add_filter( 'plugin_action_links', 'sorp_plugin_action_links', 10, 2 );
+
 add_filter( 'rwmb_meta_boxes', 'so_register_meta_boxes' );
 
-/**
- * Register meta box
- *
- * @since 2014.01.06
- */
-function so_register_meta_boxes( $meta_boxes )
-{
-
-	$prefix = 'so_';
-
-	$meta_boxes[] = array(
-		'id' => 'SO_related_posts',
-		'title' => __( 'Related Posts', 'so-related-posts' ),
-		'pages' => array( 'post' ),
-		'context' => 'normal',
-		'priority' => 'high',
-		'autosave' => true,
-		'fields' => array(
-			array(
-				'name' => __( 'Choose one or more Related Post(s) you want to show.', 'so-related-posts' ),
-				'id' => "{$prefix}related_posts",
-				'type' => 'post',
-				'post_type' => 'post',
-				'field_type' => 'select_advanced',
-				/**
-				 * add placeholder text
-				 * @since 2014.01.07
-				 */
-				'placeholder' => __( 'Please select...', 'so-related-posts' ),
-				'query_args' => array(
-					'post_status' => 'publish',
-					'posts_per_page' => '999',
-				),
-				'clone' => true
-			)
-		)
-	);
-
-	return $meta_boxes;
-}
-
-/**
- * Place the output at the bottom of the_content()
- * The output comes in its own class, so you can customise it with CSS all you want.
- *
- * Improved by changing priority from 1 to 5, add conditional is_main_query(), unset foreach call and escape text/url/title-strings
- *
- * @since 2014.01.06
- * @improved 2014.02.09
- */
 add_filter ( 'the_content', 'so_related_posts_output', 5 );
 
-function so_related_posts_output( $content ) {
+/**
+ * Sanitize and validate input. Accepts an array, return a sanitized array.
+ * @since 2014.02.12
+ */
+function sorp_validate_options($input) {
+	// strip html from textboxes
+	$input['sorp_title'] =  wp_filter_nohtml_kses( $input['sorp_title'] ); // Sanitize input (strip html tags, and escape characters)
+	return $input;
+}
 
-	// @since 2014.02.09 added is_main_query() to make sure that Related Posts don't show elsewhere
-	if ( is_main_query() && is_single() ) {
+/**
+ * Display a Settings link on the main Plugins page
+ * @since 2014.02.12
+ */
+function sorp_plugin_action_links( $links, $file ) {
 
-		$so_related_posts = rwmb_meta( 'so_related_posts', 'type=select_advanced' ); 
-
-		if( ! empty( $so_related_posts ) ) {
-		
-			$content .= '<div class="so-related-posts"><h4>' . esc_attr__( 'Related Posts:', 'so-related-posts' ) . '</h4><ul class="related-posts">';
-			
-			foreach ( $so_related_posts as $so_related_post ) {
-				
-				$content .= '<li><a href="' . esc_url( get_permalink( $so_related_post ) ) . '" title="' . esc_attr( get_the_title( $so_related_post ) ) . '">' . esc_attr( get_the_title( $so_related_post ) ) . '</a></li>';
-			
-			};
-			
-			// @since 2014.02.09
-			unset( $so_related_post );
-			
-			$content .= '</ul></div>';
-
-		}
-
+	if ( $file == plugin_basename( __FILE__ ) ) {
+		$sorp_links = '<a href="' . get_admin_url() . 'options-general.php?page=so-related-posts/so-related-posts.php">' . __( 'Settings', 'so-related-posts' ) . '</a>';
+		// make the 'Settings' link appear first
+		array_unshift( $links, $sorp_links );
 	}
 
-	return $content;
-
+	return $links;
 }
+
+
 /*** The End ***/

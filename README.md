@@ -17,6 +17,8 @@ With the plugin installed you will find a Related Posts box underneath the Post 
 
 Since 2014.01.20 I added a method to install the Meta Box plugin (where this extension depends on), instantly from within your website.
 
+Since 2014.02.12 I have added a Settings Page where you can change the default title "Related Posts" into something of your liking.
+
 ### Background
 
 For a while already I have been breeding on how to make a Related Posts plugin that doesn't query the database n times looking for related posts by tags, categories or what not. Most of the existing Related Posts plugin have an incredible (negative) impact on your site speed, so the benefits don't outweigh the costs.
@@ -27,13 +29,13 @@ Among heaps of other very useful fields, the [Meta Box plugin](http://wordpress.
 
 The SO Related Posts metabox uses the [Select2](http://ivaynberg.github.io/select2/) script which results in really beautiful and functional drop down menus. Credits for this functionality must all go to Rilwis as this is already baked in the Meta Box plugin.
 
-The Extension doesn't come with any settings; you can just choose which Posts to add. The meta box is only visible in the Edit Post screen.
+On the Settings Page you can change the title that shows on the front end above the list of Related Posts.
 
 ## Frequently Asked Questions
 
-### Where are the Settings?
+### Can I change the default title?
 
-You can stop looking, there are no settings. When you go into your Post Edit screen, you will see the Related Posts Metabox where you can choose Related Posts for your current Post.
+Yes, since 2014.02.12 I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts. Soon I will be adding more options.
 
 ### Why is the plugin showing an error message after activation?
 
@@ -71,6 +73,12 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2014.02.12
+
+* add settings page to enable changing the title output on the front end
+* update language files
+* update SO WP icon
 
 ### 2014.02.09
 

@@ -4,7 +4,7 @@ Donate link: http://so-wp.com/donations
 Tags: related posts
 Requires at least: 3.6
 Tested up to: 3.9-alpha
-Stable tag: 2014.02.09
+Stable tag: 2014.02.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,8 @@ With the plugin installed you will find a Related Posts box underneath the Post 
 
 Since 2014.01.20 I added a method to install the Meta Box plugin (where this extension depends on), instantly from within your website.
 
+Since 2014.02.12 I have added a Settings Page where you can change the default title "Related Posts" into something of your liking.
+
 = Background =
 
 For a while already I have been breeding on how to make a Related Posts plugin that doesn't query the database n times looking for related posts by tags, categories or what not. Most of the existing Related Posts plugin have an incredible (negative) impact on your site speed, so the benefits don't outweigh the costs.
@@ -28,7 +30,7 @@ Among heaps of other very useful fields, the [Meta Box plugin](http://wordpress.
 
 The SO Related Posts metabox uses the [Select2](http://ivaynberg.github.io/select2/) script which results in really beautiful and functional drop down menus. Credits for this functionality must all go to Rilwis as this is already baked in the Meta Box plugin.
 
-The Extension doesn't come with any settings; you can just choose which Posts to add. The meta box is only visible in the Edit Post screen.
+On the Settings Page you can change the title that shows on the front end above the list of Related Posts.
 
 I have decided to only support this plugin through [Github](https://github.com/senlin/so-related-posts/issues). Therefore, if you have any questions, need help and/or want to make a feature request, please open an issue over at Github. You can also browse through open and closed issues to find what you are looking for and perhaps even help others.
 
@@ -50,15 +52,17 @@ Go to **Plugins > Add New** in your WordPress Dashboard, do a search for "so rel
  3. Activate the plugin on the Plugins page.
  
  4. If you have not yet installed the Meta Box plugin (where this plugin depends on to function) you will see an error message with a link to a new install page called "Required Plugin". Go there and follow the instructions.
+ 
+ 5. Optional; go to the Settings page to change the title into something of your liking.
 
 Done!
 
 
 == Frequently Asked Questions ==
 
-= Where are the Settings? =
+= Can I change the default title? =
 
-You can stop looking, there are no settings. When you go into your Post Edit screen, you will see the Related Posts Metabox where you can choose Related Posts for your current Post.
+Yes, since 2014.02.12 I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts. Soon I will be adding more options.
 
 = Why is the plugin showing an error message after activation? =
 
@@ -78,6 +82,12 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 3. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
+
+= 2014.02.12 =
+
+* add settings page to enable changing the title output on the front end
+* update language files
+* update SO WP icon
 
 = 2014.02.09 =
 
@@ -103,3 +113,9 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 = 2014.01.06 =
 
 * first release
+
+== Upgrade Notice ==
+
+= 2014.02.12 =
+
+* the plugin now comes with a Settings Page
