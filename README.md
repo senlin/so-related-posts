@@ -110,8 +110,10 @@ This repo is open to _any_ kind of contributions.
 
 Preview of the meta box in the backend and the output on the front end.
 
-![SO Related Posts meta box: Search for the related post you want to add.](assets/screenshot-1.png "SO Related Posts meta box")
+![SO Related Posts Settings Page: Settings Page.](assets/screenshot-1.png "SO Related Posts settings")
 ---
-![SO Related Posts meta box: Add any number of related posts.](assets/screenshot-2.png "SO Related Posts meta box")
+![SO Related Posts meta box: Search for the related post you want to add.](assets/screenshot-2.png "SO Related Posts meta box")
 ---
-![SO Related Posts output: You can style it to your liking.](assets/screenshot-3.png "SO Related Posts output")
+![SO Related Posts meta box: Add any number of related posts.](assets/screenshot-3.png "SO Related Posts meta box")
+---
+![SO Related Posts output: You can style it to your liking.](assets/screenshot-4.png "SO Related Posts output")

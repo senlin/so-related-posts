@@ -77,9 +77,10 @@ Yes, you can. The output comes in its own class (`so-related-posts`) and in it y
 Please open an issue on [Github](https://github.com/senlin/so-related-posts/issues)
 
 == Screenshots ==
-1. SO Related Posts meta box: search for the related post you want to add.
-2. SO Related Posts meta box: add any number of related posts.
-3. SO Related Posts output: you can style it to your liking.
+1. SO Related Posts Settings Page: change the title output on the settings page.
+2. SO Related Posts meta box: search for the related post you want to add.
+3. SO Related Posts meta box: add any number of related posts.
+4. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
 
