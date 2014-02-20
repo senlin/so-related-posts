@@ -1,6 +1,6 @@
 # SO Related Posts
 
-###### Last updated on 2014.02.09
+###### Last updated on 2014.02.20
 ###### requires at least WordPress 3.6
 ###### tested up to WordPress 3.9-alpha
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -73,6 +73,10 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2014.02.20
+
+* bugfix, set default output title if no title has been filled in
 
 ### 2014.02.12
 

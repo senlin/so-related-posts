@@ -3,7 +3,7 @@
  * Plugin Name: SO Related Posts
  * Plugin URI: http://so-wp.com/?p=63
  * Description: This plugin lets the user choose the Related Posts from all published Posts. The plugin is an Addon for the Meta Box plugin by Rilwis and therefore cannot function without the latter being installed too.
- * Version: 2014.02.09
+ * Version: 2014.02.20
  * Author: Piet Bos
  * Author URI: http://senlinonline.com
  * Text Domain: so-related-posts
@@ -132,7 +132,7 @@ class SORP_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SORP_VERSION', '2014.02.12' );
+		define( 'SORP_VERSION', '2014.02.20' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SORP_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );

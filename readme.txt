@@ -1,10 +1,10 @@
 === SO Related Posts ===
-Contributor: senlin
+Contributors: senlin
 Donate link: http://so-wp.com/donations
 Tags: related posts
 Requires at least: 3.6
 Tested up to: 3.9-alpha
-Stable tag: 2014.02.12
+Stable tag: 2014.02.20
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,10 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 4. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
+
+= 2014.02.20 =
+
+* bugfix, set default output title if no title has been filled in
 
 = 2014.02.12 =
 
