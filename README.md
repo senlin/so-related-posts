@@ -1,8 +1,8 @@
 # SO Related Posts
 
-###### Last updated on 2014.02.20
+###### Last updated on 2014.03.23
 ###### requires at least WordPress 3.6
-###### tested up to WordPress 3.9-alpha
+###### tested up to WordPress 3.9-beta2
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](http://wordpress.org/plugins/so-related-posts) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=63)
@@ -13,11 +13,15 @@ The SO Related Posts plugin puts you in control on what really is related conten
 
 The SO Related Posts plugin is an Extension for the fantastic [Meta Box plugin](https://github.com/rilwis/meta-box) by [Rilwis](https://github.com/rilwis/) and puts you in control on what really is related content. 
 
-With the plugin installed you will find a Related Posts box underneath the Post Editor. On the frontend the Related Posts are shown in their own class with an unordered list, right after `the_content()`. The class will use the styling of your theme and you can style it further to your own liking. 
+With the plugin installed you will find a Related Posts box underneath the Post Editor. Here you will see a checkbox which you can use to turn showing the Related Posts on or off as well as a neat dropdown menu that shows up to 999 of your published Posts.
+
+On the frontend the Related Posts are shown in their own class with an unordered list, right after `the_content()`. The class will use the styling of your theme and you can style it further to your own liking. 
 
 Since 2014.01.20 I added a method to install the Meta Box plugin (where this extension depends on), instantly from within your website.
 
 Since 2014.02.12 I have added a Settings Page where you can change the default title "Related Posts" into something of your liking.
+
+Since 2014.03.23 I have added a checkbox with which you can turn the Related Posts on or off per Post
 
 ### Background
 
@@ -36,6 +40,10 @@ On the Settings Page you can change the title that shows on the front end above 
 ### Can I change the default title?
 
 Yes, since 2014.02.12 I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts. Soon I will be adding more options.
+
+### I have not added any Related Posts, but the plugin shows the current post as Related Posts
+
+First update to the latest version (2014.03.23). If after updating it still shows, then you need to uncheck the checkbox that shows under your Post.
 
 ### Why is the plugin showing an error message after activation?
 
@@ -74,6 +82,10 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
+### 2014.03.23
+
+* add checkbox to turn Related Posts on/off per post without losing the Posts you already have set. (default = off)
+
 ### 2014.02.20
 
 * bugfix, set default output title if no title has been filled in
@@ -108,7 +120,7 @@ This repo is open to _any_ kind of contributions.
 
 ### 2014.01.06
 
-* 	first release
+* first release
 
 ## Screenshots
 

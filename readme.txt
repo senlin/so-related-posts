@@ -3,8 +3,8 @@ Contributors: senlin
 Donate link: http://so-wp.com/donations
 Tags: related posts
 Requires at least: 3.6
-Tested up to: 3.9-alpha
-Stable tag: 2014.02.20
+Tested up to: 3.9-beta2
+Stable tag: 2014.03.23
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,11 +14,15 @@ The SO Related Posts plugin puts you in control on what really is related conten
 
 The SO Related Posts plugin is an Extension for the fantastic [Meta Box plugin](http://wordpress.org/plugins/meta-box/) by [Rilwis](http://profiles.wordpress.org/rilwis/) and puts you in control on what really is related content. 
 
-With the plugin installed you will find a Related Posts box underneath the Post Editor. On the frontend the Related Posts are shown in their own class with an unordered list, right after `the_content()`. The class will use the styling of your theme and you can style it further to your own liking.
+With the plugin installed you will find a Related Posts box underneath the Post Editor. Here you will see a checkbox which you can use to turn showing the Related Posts on or off as well as a neat dropdown menu that shows up to 999 of your published Posts.
+
+On the frontend the Related Posts are shown in their own class with an unordered list, right after `the_content()`. The class will use the styling of your theme and you can style it further to your own liking.
 
 Since 2014.01.20 I added a method to install the Meta Box plugin (where this extension depends on), instantly from within your website.
 
 Since 2014.02.12 I have added a Settings Page where you can change the default title "Related Posts" into something of your liking.
+
+Since 2014.03.23 I have added a checkbox with which you can turn the Related Posts on or off per Post
 
 = Background =
 
@@ -64,6 +68,10 @@ Done!
 
 Yes, since 2014.02.12 I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts. Soon I will be adding more options.
 
+= I have not added any Related Posts, but the plugin shows the current post as Related Posts =
+
+First update to the latest version (2014.03.23). If after updating it still shows, then you need to uncheck the checkbox that shows under your Post.
+
 = Why is the plugin showing an error message after activation? =
 
 This plugin is an Extension for the [Meta Box plugin](http://www.deluxeblogtips.com/meta-box/). If you don't have that installed, this Extension is useless. If you click on the link that shows with the error message you will go to a new page "Required Plugin" to install the Meta Box plugin.
@@ -83,6 +91,10 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 4. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
+
+= 2014.03.23 =
+
+* add checkbox to turn Related Posts on/off per post without losing the Posts you already have set. (default = off)
 
 = 2014.02.20 =
 
@@ -120,6 +132,10 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 * first release
 
 == Upgrade Notice ==
+
+= 2014.03.23 =
+
+* added a checkbox to turn Related Posts on/off per post without losing the Posts you already have set. As the default setting is off, you might need to go back into your Posts to tick it on.
 
 = 2014.02.12 =
 

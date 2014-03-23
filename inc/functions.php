@@ -19,13 +19,24 @@ function so_register_meta_boxes( $meta_boxes )
 	$prefix = 'so_';
 
 	$meta_boxes[] = array(
-		'id' => 'SO_related_posts',
+		'id' => 'so_related_posts',
 		'title' => __( 'Related Posts', 'so-related-posts' ),
 		'pages' => array( 'post' ),
 		'context' => 'normal',
 		'priority' => 'high',
 		'autosave' => true,
 		'fields' => array(
+			/**
+			 * add checkbox to show Related Posts or not
+			 * @since 2014.03.21
+			 */
+			array(
+				'name' => __( 'Tick the box to show Related Posts', 'so-related-posts' ),
+				'id'   => "{$prefix}checkbox",
+				'type' => 'checkbox',
+				// Value can be 0 or 1
+				'std'  => 0,
+			),
 			array(
 				'name' => __( 'Choose one or more Related Post(s) you want to show.', 'so-related-posts' ),
 				'id' => "{$prefix}related_posts",
@@ -56,18 +67,19 @@ function so_register_meta_boxes( $meta_boxes )
  * Improved by changing priority from 1 to 5, add conditional is_main_query(), unset foreach call and escape text/url/title-strings
  *
  * @since 2014.01.06
- * @improved 2014.02.09
+ * @improved 2014.03.21 added checkbox
  */
 function so_related_posts_output( $content ) {
 
 	// @since 2014.02.09 added is_main_query() to make sure that Related Posts don't show elsewhere
 	if ( is_main_query() && is_single() ) {
 
+		$so_show_related_posts = rwmb_meta( 'so_checkbox' );
 		$so_related_posts = rwmb_meta( 'so_related_posts', 'type=select_advanced' ); 
 		$options = get_option( 'sorp_options' );
 		$sorp_title = $options['sorp_title'];
 
-		if( ! empty( $so_related_posts ) ) {
+		if( $so_show_related_posts == 1 && ! empty( $so_related_posts ) ) {
 		
 			if( ! empty( $rpp_title ) ) {
 				$content .= '<div class="so-related-posts"><h4>' . $rpp_title . '</h4><ul class="related-posts">';
