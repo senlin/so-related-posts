@@ -4,7 +4,7 @@ Donate link: http://so-wp.com/donations
 Tags: related posts
 Requires at least: 3.6
 Tested up to: 3.9-beta2
-Stable tag: 2014.03.23
+Stable tag: 2014.04.03
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,6 +91,10 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 4. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
+
+= 2014.04.03 =
+
+* fix title bug
 
 = 2014.03.23 =
 

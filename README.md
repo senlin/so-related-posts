@@ -82,6 +82,10 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
+### 2014.04.03
+
+* fix title bug
+
 ### 2014.03.23
 
 * add checkbox to turn Related Posts on/off per post without losing the Posts you already have set. (default = off)

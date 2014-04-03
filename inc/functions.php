@@ -81,8 +81,8 @@ function so_related_posts_output( $content ) {
 
 		if( $so_show_related_posts == 1 && ! empty( $so_related_posts ) ) {
 		
-			if( ! empty( $rpp_title ) ) {
-				$content .= '<div class="so-related-posts"><h4>' . $rpp_title . '</h4><ul class="related-posts">';
+			if( ! empty( $sorp_title ) ) {
+				$content .= '<div class="so-related-posts"><h4>' . $sorp_title . '</h4><ul class="related-posts">';
 			} else {
 				$content .= '<div class="so-related-posts"><h4>' . __( 'Related Posts', 'so-related-posts' ) . '</h4><ul class="related-posts">';
 			}
