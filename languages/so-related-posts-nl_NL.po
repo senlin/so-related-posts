@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SO Related Posts\n"
-"POT-Creation-Date: 2014-02-12 16:26+0800\n"
-"PO-Revision-Date: 2014-02-12 16:28+0800\n"
+"POT-Creation-Date: 2014-04-04 10:33+0800\n"
+"PO-Revision-Date: 2014-04-04 10:42+0800\n"
 "Last-Translator: Piet Bos <piet@senlinonline.com>\n"
 "Language-Team: Piet Bos <piet@senlinonline.com>\n"
 "Language: nl\n"
@@ -40,34 +40,40 @@ msgstr ""
 "Verander de titel die boven de lijst van gerelateerde artikelen staat in "
 "iets anders"
 
-#: admin/settings.php:42
-msgid "More Options Coming Soon!"
-msgstr "Binnenkort komen er nog meer Instellingen!"
-
-#: admin/settings.php:46
-msgid "We are planning to roll out many more options soon!"
-msgstr "We hebben een aantal nieuwe instellingen gepland!"
+#: admin/settings.php:43
+#, php-format
+msgid ""
+"Get more options with<br /><a href=\"%s\" title=\"SO PLUS Premium WordPress "
+"Plugins by Senlin Online\">SO Related Posts PLUS</a>!"
+msgstr ""
+"Nu meer opties met <br /><a href=\"%s\" title=\"SO PLUS Premium WordPress "
+"Plugins door Senlin Online\">SO Related Posts PLUS</a>!"
 
 #: admin/settings.php:52
+#, php-format
+msgid "Upgrade now with coupon code: %1$s for %2$s!"
+msgstr "Upgrade nu met de coupon code: %1$s voor %2$s!"
+
+#: admin/settings.php:63
 msgid "Database Options"
 msgstr "Database Opties"
 
-#: admin/settings.php:57
+#: admin/settings.php:68
 msgid "Restore defaults upon plugin deactivation/reactivation"
 msgstr ""
 "Standaard instellingen herstellen na plugin deactivering/heractivering "
 
-#: admin/settings.php:58
+#: admin/settings.php:69
 msgid ""
 "Only check this if you want to reset plugin settings upon Plugin reactivation"
 msgstr ""
 "Check dit alleen als je de plugin instellingen wilt resetten na heractivering"
 
-#: admin/settings.php:66
+#: admin/settings.php:77
 msgid "Save Settings"
 msgstr "Bewaar Instellingen"
 
-#: admin/settings.php:77
+#: admin/settings.php:88
 #, php-format
 msgid ""
 "If you have found this plugin at all useful, please give it a favourable "
@@ -78,7 +84,7 @@ msgstr ""
 "de <a href=\"%s\" title=\"Geef deze plugin een waardering!\">WordPress "
 "Plugin Repository</a>."
 
-#: admin/settings.php:86
+#: admin/settings.php:97
 #, php-format
 msgid ""
 "If you have an issue with this plugin or want to leave a feature request, "
@@ -89,11 +95,11 @@ msgstr ""
 "doen, houd er dan rekening mee dat ik de plugin alleen <a href=\"%s\" title="
 "\"Support of Feature Requests via Github\">ondersteun via Github</a>."
 
-#: admin/settings.php:95
+#: admin/settings.php:106
 msgid "About the Author"
 msgstr "Over de Auteur"
 
-#: admin/settings.php:102
+#: admin/settings.php:113
 #, php-format
 msgid ""
 "Hi, my name is Piet Bos, I hope you like this plugin! Please check out any "
@@ -105,31 +111,35 @@ msgstr ""
 "\">SO WP Plugins</a>. Je kan meer informatie over mij vinden via de "
 "onderstaande links:"
 
-#: admin/settings.php:109
+#: admin/settings.php:120
+msgid "SO PLUS"
+msgstr "SO PLUS"
+
+#: admin/settings.php:121
 msgid "Senlin Online"
 msgstr "Senlin Online"
 
-#: admin/settings.php:110
+#: admin/settings.php:122
 msgid "WP Tips"
 msgstr "WP Tips"
 
-#: admin/settings.php:111
+#: admin/settings.php:123
 msgid "Google+"
 msgstr "Google+"
 
-#: admin/settings.php:112
+#: admin/settings.php:124
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: admin/settings.php:113
+#: admin/settings.php:125
 msgid "Twitter: @piethfbos"
 msgstr "Twitter: @piethfbos"
 
-#: admin/settings.php:114
+#: admin/settings.php:126
 msgid "Github"
 msgstr "Github"
 
-#: admin/settings.php:115
+#: admin/settings.php:127
 msgid "WordPress.org Profile"
 msgstr "WordPress.org profiel"
 
@@ -463,15 +473,19 @@ msgstr "Terug naar het Dashboard"
 msgid "Return to the Plugins Menu"
 msgstr "Terug naar het Plugins Menu"
 
-#: inc/functions.php:23 so-related-posts.php:262
+#: inc/functions.php:23 inc/functions.php:87 so-related-posts.php:262
 msgid "Related Posts"
 msgstr "Gerelateerde artikelen"
 
-#: inc/functions.php:30
+#: inc/functions.php:34
+msgid "Tick the box to show Related Posts"
+msgstr "Vink aan om de gerelateerde artikelen te laten zien"
+
+#: inc/functions.php:41
 msgid "Choose one or more Related Post(s) you want to show."
 msgstr "Kies één of meerdere gerelateerde artikel(en) die je wilt laten zien."
 
-#: inc/functions.php:39
+#: inc/functions.php:50
 msgid "Please select..."
 msgstr "Maak een keuze..."
 
@@ -543,6 +557,12 @@ msgstr ""
 #: so-related-posts.php:319
 msgid "Settings"
 msgstr "Instellingen"
+
+#~ msgid "More Options Coming Soon!"
+#~ msgstr "Binnenkort komen er nog meer Instellingen!"
+
+#~ msgid "We are planning to roll out many more options soon!"
+#~ msgstr "We hebben een aantal nieuwe instellingen gepland!"
 
 #~ msgid "http://so-wp.com/?p=63"
 #~ msgstr "http://so-wp.com/?p=63"

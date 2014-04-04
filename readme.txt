@@ -3,8 +3,8 @@ Contributors: senlin
 Donate link: http://so-wp.com/donations
 Tags: related posts
 Requires at least: 3.6
-Tested up to: 3.9-beta2
-Stable tag: 2014.04.03
+Tested up to: 3.9-beta3
+Stable tag: 2014.04.04
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,8 @@ Since 2014.01.20 I added a method to install the Meta Box plugin (where this ext
 Since 2014.02.12 I have added a Settings Page where you can change the default title "Related Posts" into something of your liking.
 
 Since 2014.03.23 I have added a checkbox with which you can turn the Related Posts on or off per Post
+
+Since 2014.04.04 there is a premium version available with more built in options, such as custom styling from within the plugin and the possibility to add thumbnails. More information via [SO PLUS](https://senlinonline.com/plus/plugin/so-related-posts-plus/).
 
 = Background =
 
@@ -91,6 +93,11 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 4. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
+
+= 2014.04.04 =
+
+* added SO PLUS reference and discount coupon
+* update language files
 
 = 2014.04.03 =
 

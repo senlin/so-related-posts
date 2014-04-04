@@ -2,7 +2,7 @@
 /**
  * Render the Plugin options form
  * @since 2.0.0
- * @modified 2014.02.10 to fit 3.8 layout and styling
+ * @modified 2014.04.04 to add SO PLUS reference
  */
 function sorp_render_form() { ?>
 
@@ -39,11 +39,22 @@ function sorp_render_form() { ?>
 
 					<tr valign="top">
 						<th scope="row">
-							<label for="sorp-options"><?php _e( 'More Options Coming Soon!', 'so-related-posts' ); ?></label>
+							<label for="sorp-options">
+								<?php printf( __( 'Get more options with<br /><a href="%s" title="SO PLUS Premium WordPress Plugins by Senlin Online">SO Related Posts PLUS</a>!', 'so-related-posts' ),
+									'https://senlinonline.com/plus/plugin/so-related-posts-plus/'
+								); ?>
+							</label>
 						</th>
 
 						<td>
-							<p class="description"><?php _e( 'We are planning to roll out many more options soon!', 'so-related-posts' ); ?></p>
+							<p class="description">
+								<?php 
+									printf( __( 'Upgrade now with coupon code: %1$s for %2$s!', 'so-related-posts' ),
+										'<span class="discount">SWITCH2PLUS</span>',
+										'<strong>30% discount</strong>'
+									);
+								?>
+							</p>
 						</td>
 					</tr>
 						
@@ -106,6 +117,7 @@ function sorp_render_form() { ?>
 				</div> <!-- end .top -->
 				
 				<ul>
+					<li><a href="https://senlinonline.com/plus/" target="_blank" title="SO PLUS"><?php _e( 'SO PLUS', 'so-related-posts' ); ?></a></li>
 					<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e('Senlin Online', 'so-related-posts'); ?></a></li>
 					<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e('WP Tips', 'so-related-posts'); ?></a></li>
 					<li><a href="https://plus.google.com/+PietBos" target="_blank" title="Piet on Google+"><?php _e( 'Google+', 'so-related-posts' ); ?></a></li>

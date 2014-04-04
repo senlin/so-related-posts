@@ -1,11 +1,13 @@
 # SO Related Posts
 
-###### Last updated on 2014.03.23
+###### Last updated on 2014.04.04
 ###### requires at least WordPress 3.6
-###### tested up to WordPress 3.9-beta2
+###### tested up to WordPress 3.9-beta3
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](http://wordpress.org/plugins/so-related-posts) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=63)
+
+##### [SO Related Posts PLUS](https://senlinonline.com/plus/plugin/so-related-posts-plus/)
 
 The SO Related Posts plugin puts you in control on what really is related content.
 
@@ -81,6 +83,11 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2014.04.04
+
+* added SO PLUS reference and discount coupon
+* update language files
 
 ### 2014.04.03
 
