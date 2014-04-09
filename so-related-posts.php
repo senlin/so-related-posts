@@ -93,7 +93,7 @@ class SORP_Load {
 
 		global $sorp;
 
-		/* Set up an empty class for the global $so_pinyinslugs object. */
+		/* Set up an empty class for the global $sorp object. */
 		$sorp = new stdClass;
 
 		/* Set the init. */
