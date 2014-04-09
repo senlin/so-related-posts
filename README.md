@@ -1,8 +1,8 @@
 # SO Related Posts
 
-###### Last updated on 2014.04.04
+###### Last updated on 2014.04.09
 ###### requires at least WordPress 3.6
-###### tested up to WordPress 3.9-beta3
+###### tested up to WordPress 3.9-RC1
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](http://wordpress.org/plugins/so-related-posts) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=63)
@@ -83,6 +83,11 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2014.04.09
+
+* updated TGM Plugin Activation class to 2.4
+* update language files
 
 ### 2014.04.04
 

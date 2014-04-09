@@ -3,8 +3,8 @@ Contributors: senlin
 Donate link: http://so-wp.com/donations
 Tags: related posts
 Requires at least: 3.6
-Tested up to: 3.9-beta3
-Stable tag: 2014.04.04
+Tested up to: 3.9-RC1
+Stable tag: 2014.04.09
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -93,6 +93,11 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 4. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
+
+= 2014.04.09 =
+
+* updated TGM Plugin Activation class to 2.4
+* update language files
 
 = 2014.04.04 =
 
