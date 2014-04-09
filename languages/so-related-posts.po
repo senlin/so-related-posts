@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SO Related Posts\n"
-"POT-Creation-Date: 2014-04-04 10:44+0800\n"
-"PO-Revision-Date: 2014-04-04 10:47+0800\n"
+"POT-Creation-Date: 2014-04-09 18:34+0800\n"
+"PO-Revision-Date: 2014-04-09 18:34+0800\n"
 "Last-Translator: Piet Bos <piet@senlinonline.com>\n"
 "Language-Team: Piet Bos <piet@senlinonline.com>\n"
 "MIME-Version: 1.0\n"
@@ -124,38 +124,38 @@ msgstr "Github"
 msgid "WordPress.org Profile"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:155
+#: inc/class-tgm-plugin-activation.php:196
 msgid "Install Required Plugins"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:156
+#: inc/class-tgm-plugin-activation.php:197
 msgid "Install Plugins"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:157 inc/required-plugin.php:79
+#: inc/class-tgm-plugin-activation.php:198 inc/required-plugin.php:79
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:158
+#: inc/class-tgm-plugin-activation.php:199
 msgid "Something went wrong."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:159
+#: inc/class-tgm-plugin-activation.php:200
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:160
+#: inc/class-tgm-plugin-activation.php:201
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:161 inc/required-plugin.php:82
+#: inc/class-tgm-plugin-activation.php:202 inc/required-plugin.php:82
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
@@ -168,21 +168,21 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:162 inc/required-plugin.php:83
+#: inc/class-tgm-plugin-activation.php:203 inc/required-plugin.php:83
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:163
+#: inc/class-tgm-plugin-activation.php:204
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:164 inc/required-plugin.php:84
+#: inc/class-tgm-plugin-activation.php:205 inc/required-plugin.php:84
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to activate the %s "
@@ -195,7 +195,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:165
+#: inc/class-tgm-plugin-activation.php:206
 #, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -206,7 +206,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:166 inc/required-plugin.php:86
+#: inc/class-tgm-plugin-activation.php:207 inc/required-plugin.php:86
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
@@ -219,205 +219,208 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:167 inc/required-plugin.php:87
+#: inc/class-tgm-plugin-activation.php:208 inc/required-plugin.php:87
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:168 inc/required-plugin.php:88
-msgid "Activate installed plugin"
-msgid_plural "Activate installed plugins"
+#: inc/class-tgm-plugin-activation.php:209
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:169
+#: inc/class-tgm-plugin-activation.php:210
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:170
+#: inc/class-tgm-plugin-activation.php:211
 msgid "Return to the dashboard"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:171
-#: inc/class-tgm-plugin-activation.php:1840
+#: inc/class-tgm-plugin-activation.php:212
+#: inc/class-tgm-plugin-activation.php:1948
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:172
-#: inc/class-tgm-plugin-activation.php:1538
+#: inc/class-tgm-plugin-activation.php:213
+#: inc/class-tgm-plugin-activation.php:1638
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:173
+#: inc/class-tgm-plugin-activation.php:214
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:174
+#: inc/class-tgm-plugin-activation.php:215
 msgid "Dismiss this notice"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1085
-msgid "External Link"
+#: inc/class-tgm-plugin-activation.php:544
+#: inc/class-tgm-plugin-activation.php:2165
+msgid "Return to the Plugins page"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1090
+#: inc/class-tgm-plugin-activation.php:1174
 msgid "Private Repository"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1093
+#: inc/class-tgm-plugin-activation.php:1177
 msgid "Pre-Packaged"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1097
+#: inc/class-tgm-plugin-activation.php:1182
 msgid "WordPress Repository"
 msgstr "WordPress Repository"
 
-#: inc/class-tgm-plugin-activation.php:1100
+#: inc/class-tgm-plugin-activation.php:1185
 msgid "Required"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1100
+#: inc/class-tgm-plugin-activation.php:1185
 msgid "Recommended"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1103
+#: inc/class-tgm-plugin-activation.php:1188
 msgid "Not Installed"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1105
+#: inc/class-tgm-plugin-activation.php:1190
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1275
-#, php-format
-msgid ""
-"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
-"Plugins Menu\">Return to the Plugins Menu</a>"
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:1291
-msgid "Plugin"
-msgstr "Plugin"
-
-#: inc/class-tgm-plugin-activation.php:1292
-msgid "Source"
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:1293
-msgid "Type"
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:1294
-msgid "Status"
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:1312
+#: inc/class-tgm-plugin-activation.php:1290
+#: inc/class-tgm-plugin-activation.php:1398
 msgid "Install"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1313
+#: inc/class-tgm-plugin-activation.php:1312
+#: inc/class-tgm-plugin-activation.php:1399
 msgid "Activate"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1823
+#: inc/class-tgm-plugin-activation.php:1361
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Plugins page\">Return to the Plugins page</a>"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1377
+msgid "Plugin"
+msgstr "Plugin"
+
+#: inc/class-tgm-plugin-activation.php:1378
+msgid "Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1379
+msgid "Type"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1380
+msgid "Status"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1508
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1616
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1931
 msgid "Install package not available."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1824
+#: inc/class-tgm-plugin-activation.php:1932
 #, php-format
 msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1825
+#: inc/class-tgm-plugin-activation.php:1933
 msgid "Unpacking the package&#8230;"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1826
+#: inc/class-tgm-plugin-activation.php:1934
 msgid "Installing the plugin&#8230;"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1827
+#: inc/class-tgm-plugin-activation.php:1935
 msgid "Plugin install failed."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1828
+#: inc/class-tgm-plugin-activation.php:1936
 msgid "Plugin installed successfully."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1839
+#: inc/class-tgm-plugin-activation.php:1947
 msgid "Plugin activation failed."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1949
+#: inc/class-tgm-plugin-activation.php:2061
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1950
+#: inc/class-tgm-plugin-activation.php:2062
 #, php-format
 msgid "%1$s installed and activated successfully."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1950
-#: inc/class-tgm-plugin-activation.php:1959
+#: inc/class-tgm-plugin-activation.php:2062
+#: inc/class-tgm-plugin-activation.php:2071
 msgid "Show Details"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1950
-#: inc/class-tgm-plugin-activation.php:1959
+#: inc/class-tgm-plugin-activation.php:2062
+#: inc/class-tgm-plugin-activation.php:2071
 msgid "Hide Details"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1951
+#: inc/class-tgm-plugin-activation.php:2063
 msgid "All installations and activations have been completed."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1952
+#: inc/class-tgm-plugin-activation.php:2064
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1956
+#: inc/class-tgm-plugin-activation.php:2068
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1957
+#: inc/class-tgm-plugin-activation.php:2069
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1958
+#: inc/class-tgm-plugin-activation.php:2070
 #, php-format
 msgid "The installation of %1$s failed."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1959
+#: inc/class-tgm-plugin-activation.php:2071
 #, php-format
 msgid "%1$s installed successfully."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1960
+#: inc/class-tgm-plugin-activation.php:2072
 msgid "All installations have been completed."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1961
+#: inc/class-tgm-plugin-activation.php:2073
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:2052
-msgid "Return to the Dashboard"
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:2052
-msgid "Return to the Plugins Menu"
 msgstr ""
 
 #: inc/functions.php:23 inc/functions.php:87 so-related-posts.php:262
@@ -464,6 +467,12 @@ msgid ""
 msgid_plural ""
 "The following plugins need to be updated to their latest version to ensure "
 "maximum compatibility with the SO Related Posts plugin: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugin.php:88
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
 msgstr[0] ""
 msgstr[1] ""
 
