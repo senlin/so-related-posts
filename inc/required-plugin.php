@@ -83,7 +83,7 @@ function sorp_register_required_plugin() {
             'return'                          => __( 'Return to the Plugins page', 'tgmpa' ),
             'plugin_activated'                => __( 'The Meta Box plugin has been activated successfully.', 'tgmpa' ),
             'complete'                        => __( 'The Meta Box plugin has been successfully installed and activated. %s', 'tgmpa' ), // %s = dashboard link.
-            'nag_type'                        => 'updated' // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
+            'nag_type'                        => 'error' // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
         )
     );
 
