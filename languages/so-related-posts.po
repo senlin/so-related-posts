@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SO Related Posts\n"
-"POT-Creation-Date: 2014-04-09 18:34+0800\n"
-"PO-Revision-Date: 2014-04-09 18:34+0800\n"
+"POT-Creation-Date: 2014-04-10 22:38+0800\n"
+"PO-Revision-Date: 2014-04-10 22:39+0800\n"
 "Last-Translator: Piet Bos <piet@senlinonline.com>\n"
 "Language-Team: Piet Bos <piet@senlinonline.com>\n"
 "MIME-Version: 1.0\n"
@@ -132,7 +132,7 @@ msgstr ""
 msgid "Install Plugins"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:198 inc/required-plugin.php:79
+#: inc/class-tgm-plugin-activation.php:198 inc/required-plugin.php:73
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
@@ -155,7 +155,7 @@ msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:202 inc/required-plugin.php:82
+#: inc/class-tgm-plugin-activation.php:202 inc/required-plugin.php:76
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
@@ -168,7 +168,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:203 inc/required-plugin.php:83
+#: inc/class-tgm-plugin-activation.php:203 inc/required-plugin.php:77
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
@@ -182,7 +182,7 @@ msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:205 inc/required-plugin.php:84
+#: inc/class-tgm-plugin-activation.php:205 inc/required-plugin.php:78
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to activate the %s "
@@ -195,7 +195,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:206
+#: inc/class-tgm-plugin-activation.php:206 inc/required-plugin.php:79
 #, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -206,7 +206,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:207 inc/required-plugin.php:86
+#: inc/class-tgm-plugin-activation.php:207 inc/required-plugin.php:80
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
@@ -219,13 +219,13 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:208 inc/required-plugin.php:87
+#: inc/class-tgm-plugin-activation.php:208 inc/required-plugin.php:81
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:209
+#: inc/class-tgm-plugin-activation.php:209 inc/required-plugin.php:82
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
@@ -261,7 +261,7 @@ msgid "Dismiss this notice"
 msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:544
-#: inc/class-tgm-plugin-activation.php:2165
+#: inc/class-tgm-plugin-activation.php:2165 inc/required-plugin.php:83
 msgid "Return to the Plugins page"
 msgstr ""
 
@@ -439,19 +439,19 @@ msgstr ""
 msgid "Please select..."
 msgstr ""
 
-#: inc/required-plugin.php:77
+#: inc/required-plugin.php:71
 msgid "Install Required Plugin"
 msgstr ""
 
-#: inc/required-plugin.php:78
+#: inc/required-plugin.php:72
 msgid "Required Plugin"
 msgstr ""
 
-#: inc/required-plugin.php:80
+#: inc/required-plugin.php:74
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: inc/required-plugin.php:81
+#: inc/required-plugin.php:75
 #, php-format
 msgid "The SO Related Posts plugin requires the following plugin: %1$s."
 msgid_plural ""
@@ -459,32 +459,11 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
+#: inc/required-plugin.php:84
+msgid "The Meta Box plugin has been activated successfully."
+msgstr ""
+
 #: inc/required-plugin.php:85
-#, php-format
-msgid ""
-"The following plugin needs to be updated to its latest version to ensure "
-"maximum compatibility with the SO Related Posts plugin: %1$s."
-msgid_plural ""
-"The following plugins need to be updated to their latest version to ensure "
-"maximum compatibility with the SO Related Posts plugin: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/required-plugin.php:88
-msgid "Activate installed plugin"
-msgid_plural "Activate installed plugins"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/required-plugin.php:89
-msgid "Return to Plugins Menu"
-msgstr ""
-
-#: inc/required-plugin.php:90
-msgid "The Meta Box plugin has been successfully activated."
-msgstr ""
-
-#: inc/required-plugin.php:91
 #, php-format
 msgid "The Meta Box plugin has been successfully installed and activated. %s"
 msgstr ""
