@@ -324,5 +324,17 @@ function sorp_plugin_action_links( $links, $file ) {
 	return $links;
 }
 
+/**
+ * Jetpack instructions to prevent any of their modules from auto-activating
+ *
+ * @var array
+ * @since 2014.04.13
+ */
+add_filter( 'jetpack_get_default_modules', 'sorp_jetpack_get_default_modules' );
+
+function sorp_jetpack_get_default_modules( $modules ) {
+	return array_diff( $modules, array( 'related-posts' ) );
+}
+
 
 /*** The End ***/

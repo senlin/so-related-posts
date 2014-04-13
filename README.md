@@ -84,6 +84,10 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
+### next version =
+
+* 2014.04.13 added filter to prevent Jetpack related posts module from auto-activating
+
 ### 2014.04.09
 
 * updated TGM Plugin Activation class to 2.4

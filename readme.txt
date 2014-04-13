@@ -94,6 +94,10 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 
 == Changelog ==
 
+= next version =
+
+* 2014.04.13 added filter to prevent Jetpack related posts module from auto-activating
+
 = 2014.04.09 =
 
 * updated TGM Plugin Activation class to 2.4
