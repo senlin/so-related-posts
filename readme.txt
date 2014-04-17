@@ -2,9 +2,9 @@
 Contributors: senlin
 Donate link: http://so-wp.com/donations
 Tags: related posts
-Requires at least: 3.6
-Tested up to: 3.9-RC1
-Stable tag: 2014.04.09
+Requires at least: 3.7
+Tested up to: 3.9
+Stable tag: 2014.04.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -94,9 +94,11 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 
 == Changelog ==
 
-= next version =
+= 2014.04.17 =
 
-* 2014.04.13 added filter to prevent Jetpack related posts module from auto-activating
+* added filter to prevent Jetpack related posts module from auto-activating
+* move minimum WP version up to 3.7
+* modify default settings function
 
 = 2014.04.09 =
 

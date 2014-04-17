@@ -1,8 +1,8 @@
 # SO Related Posts
 
-###### Last updated on 2014.04.09
-###### requires at least WordPress 3.6
-###### tested up to WordPress 3.9-RC1
+###### Last updated on 2014.04.17
+###### requires at least WordPress 3.7
+###### tested up to WordPress 3.9
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](http://wordpress.org/plugins/so-related-posts) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=63)
@@ -84,9 +84,11 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
-### next version =
+### 2014.04.17
 
-* 2014.04.13 added filter to prevent Jetpack related posts module from auto-activating
+* added filter to prevent Jetpack related posts module from auto-activating
+* move minimum WP version up to 3.7
+* modify default settings function
 
 ### 2014.04.09
 

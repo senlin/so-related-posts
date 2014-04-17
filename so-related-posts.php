@@ -3,7 +3,7 @@
  * Plugin Name: SO Related Posts
  * Plugin URI: http://so-wp.com/?p=63
  * Description: The SO Related Posts plugin puts you in control on what really is related content. No more front end database queries that slow your site down, the work is all done on the back end.
- * Version: 2014.04.09
+ * Version: 2014.04.17
  * Author: Piet Bos
  * Author URI: http://senlinonline.com
  * Text Domain: so-related-posts
@@ -42,6 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * adapted from example by Thomas Scholz (@toscho) http://wordpress.stackexchange.com/a/95183/2015, Version: 2013.03.31, Licence: MIT (http://opensource.org/licenses/MIT)
  *
  * @since 2014.01.06
+ * @modified 2014.04.17 (bump up to WP 3.7)
  */
 
 //Only do this when on the Plugins page.
@@ -50,7 +51,7 @@ if ( ! empty ( $GLOBALS['pagenow'] ) && 'plugins.php' === $GLOBALS['pagenow'] )
 
 function so_min_wp_version() {
 	global $wp_version;
-	$require_wp = '3.6';
+	$require_wp = '3.7';
 	$update_url = get_admin_url( null, 'update-core.php' );
 
 	$errors = array();
@@ -132,7 +133,7 @@ class SORP_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SORP_VERSION', '2014.04.09' );
+		define( 'SORP_VERSION', '2014.04.17' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SORP_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -232,9 +233,10 @@ require_once dirname( __FILE__ ) . '/inc/required-plugin.php';
 /**
  * Register activation/deactivation hooks
  * @since 2014.02.12
+ * @modified 2014.04.17
  */
 register_activation_hook( __FILE__, 'sorp_add_defaults' ); 
-register_deactivation_hook( __FILE__, 'sorp_delete_plugin_options' );
+register_uninstall_hook( __FILE__, 'sorp_delete_plugin_options' );
 
 add_action( 'admin_menu', 'sorp_add_options_page' );
 
@@ -249,14 +251,13 @@ function sorp_add_options_page() {
 /**
  * Define default option settings
  * @since 2014.02.12
+ * @modified 2014.04.17
  */
 function sorp_add_defaults() {
 	
 	$tmp = get_option( 'sorp_options' );
 	
 	if ( ( $tmp['chk_default_options_db'] == '1' ) || ( ! is_array( $tmp ) ) ) {
-		
-		delete_option( 'sorp_options' ); // so we don't have to reset all the 'off' checkboxes too! (don't think this is needed but leave for now)
 		
 		$arr = array(
 			'sorp_title' => __( 'Related Posts', 'so-related-posts' ),
