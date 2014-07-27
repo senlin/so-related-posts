@@ -4,7 +4,7 @@ Donate link: http://so-wp.com/donations
 Tags: related posts
 Requires at least: 3.7
 Tested up to: 3.9
-Stable tag: 2014.04.17
+Stable tag: 2014.07.27
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,11 +68,11 @@ Done!
 
 = Can I change the default title? =
 
-Yes, since 2014.02.12 I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts. Soon I will be adding more options.
+Yes, since 2014.02.12 I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts. More options are available with the [SO Related Posts PLUS](https://senlinonline.com/plus/plugin/so-related-posts-plus/) plugin.
 
 = I have not added any Related Posts, but the plugin shows the current post as Related Posts =
 
-First update to the latest version (2014.03.23). If after updating it still shows, then you need to uncheck the checkbox that shows under your Post.
+First update to the latest version (2014.07.27). If after updating it still shows, then you need to uncheck the checkbox that shows under your Post.
 
 = Why is the plugin showing an error message after activation? =
 
@@ -93,6 +93,11 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 4. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
+
+= 2014.07.27 =
+
+* add wpml-config.xml file to be able to translate the title on sites that have WPML installed
+* increase min. required WP version to 3.8
 
 = 2014.04.17 =
 

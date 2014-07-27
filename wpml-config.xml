@@ -1,0 +1,7 @@
+<wpml-config>
+    <admin-texts>
+        <key name="sorp_options">
+	        <key name="sorp_title" />
+        </key>
+    </admin-texts>    
+</wpml-config>

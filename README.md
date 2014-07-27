@@ -1,8 +1,8 @@
 # SO Related Posts
 
-###### Last updated on 2014.04.17
-###### requires at least WordPress 3.7
-###### tested up to WordPress 3.9
+###### Last updated on 2014.07.27
+###### requires at least WordPress 3.8
+###### tested up to WordPress 4.0-beta-2
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](http://wordpress.org/plugins/so-related-posts) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=63)
@@ -41,7 +41,7 @@ On the Settings Page you can change the title that shows on the front end above 
 
 ### Can I change the default title?
 
-Yes, since 2014.02.12 I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts. Soon I will be adding more options.
+Yes, since 2014.02.12 I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts. More options are available with the [SO Related Posts PLUS](https://senlinonline.com/plus/plugin/so-related-posts-plus/) plugin.
 
 ### I have not added any Related Posts, but the plugin shows the current post as Related Posts
 
@@ -83,6 +83,11 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2014.07.27
+
+* add wpml-config.xml file to be able to translate the title on sites that have WPML installed
+* increase min. required WP version to 3.8
 
 ### 2014.04.17
 
