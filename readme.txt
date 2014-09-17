@@ -2,9 +2,9 @@
 Contributors: senlin
 Donate link: http://so-wp.com/donations
 Tags: related posts
-Requires at least: 3.7
-Tested up to: 3.9
-Stable tag: 2014.07.27
+Requires at least: 3.8
+Tested up to: 4.0
+Stable tag: 2014.08.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -93,6 +93,10 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 4. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
+
+= 2014.08.15 =
+
+* remove function that disables auto-activation of Jetpack's related posts module -> doesn't work, stop trying, waste of time
 
 = 2014.07.27 =
 

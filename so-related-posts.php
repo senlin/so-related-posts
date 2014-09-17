@@ -3,7 +3,7 @@
  * Plugin Name: SO Related Posts
  * Plugin URI: http://so-wp.com/?p=63
  * Description: The SO Related Posts plugin puts you in control on what really is related content. No more front end database queries that slow your site down, the work is all done on the back end.
- * Version: 2014.07.27
+ * Version: 2014.08.15
  * Author: Piet Bos
  * Author URI: http://senlinonline.com
  * Text Domain: so-related-posts
@@ -330,12 +330,17 @@ function sorp_plugin_action_links( $links, $file ) {
  *
  * @var array
  * @since 2014.04.13
+ * @source: jetpack.me/2013/10/07/do-not-automatically-activate-a-jetpack-module/
  */
-add_filter( 'jetpack_get_default_modules', 'sorp_jetpack_get_default_modules' );
+add_filter( 'jetpack_get_default_modules', 'sorp_disable_jetpack_related_posts' );
 
-function sorp_jetpack_get_default_modules( $modules ) {
-	return array_diff( $modules, array( 'related-posts' ) );
+function sorp_disable_jetpack_related_posts( $modules ) {
+	
+	if ( class_exists( 'Jetpack' ) ) {
+	
+		return array_diff( $modules, array( 'related-posts' ) );
+	
+	}
 }
-
 
 /*** The End ***/

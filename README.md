@@ -1,8 +1,8 @@
 # SO Related Posts
 
-###### Last updated on 2014.07.27
+###### Last updated on 2014.08.15
 ###### requires at least WordPress 3.8
-###### tested up to WordPress 4.0-beta-2
+###### tested up to WordPress 4.0
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](http://wordpress.org/plugins/so-related-posts) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=63)
@@ -83,6 +83,10 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2014.08.15
+
+* remove function that disables auto-activation of Jetpack's related posts module -> doesn't work, stop trying, waste of time
 
 ### 2014.07.27
 
