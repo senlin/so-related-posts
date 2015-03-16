@@ -3,13 +3,13 @@
  * Plugin Name: SO Related Posts
  * Plugin URI: http://so-wp.com/?p=63
  * Description: The SO Related Posts plugin puts you in control on what really is related content. No more front end database queries that slow your site down, the work is all done on the back end.
- * Version: 2014.08.15
+ * Version: 2015.03.16
  * Author: Piet Bos
  * Author URI: http://senlinonline.com
  * Text Domain: so-related-posts
  * Domain Path: /languages
  *
- * Copywrite 2013 Piet Bos (piet@senlinonline.com)
+ * Copyright 2013-2015 Piet Bos (piet@senlinonline.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * adapted from example by Thomas Scholz (@toscho) http://wordpress.stackexchange.com/a/95183/2015, Version: 2013.03.31, Licence: MIT (http://opensource.org/licenses/MIT)
  *
  * @since 2014.01.06
- * @modified 2014.04.17 (bump up to WP 3.7)
+ * @modified 2015.03.16 (bump up to WP 4.0)
  */
 
 //Only do this when on the Plugins page.
@@ -51,7 +51,7 @@ if ( ! empty ( $GLOBALS['pagenow'] ) && 'plugins.php' === $GLOBALS['pagenow'] )
 
 function so_min_wp_version() {
 	global $wp_version;
-	$require_wp = '3.8';
+	$require_wp = '4.0';
 	$update_url = get_admin_url( null, 'update-core.php' );
 
 	$errors = array();
@@ -133,7 +133,7 @@ class SORP_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SORP_VERSION', '2014.07.27' );
+		define( 'SORP_VERSION', '2015.03.16' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SORP_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );

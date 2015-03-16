@@ -1,8 +1,8 @@
 # SO Related Posts
 
-###### Last updated on 2014.08.15
-###### requires at least WordPress 3.8
-###### tested up to WordPress 4.0
+###### Last updated on 2015.03.16
+###### requires at least WordPress 4.0
+###### tested up to WordPress 4.2
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](http://wordpress.org/plugins/so-related-posts) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=63)
@@ -45,11 +45,11 @@ Yes, since 2014.02.12 I have added a Settings Page where you can change the titl
 
 ### I have not added any Related Posts, but the plugin shows the current post as Related Posts
 
-First update to the latest version (2014.03.23). If after updating it still shows, then you need to uncheck the checkbox that shows under your Post.
+First update to the latest version. If after updating it still shows, then you need to uncheck the checkbox that shows under your Post.
 
 ### Why is the plugin showing an error message after activation?
 
-This plugin is an Extension for the [Meta Box plugin](http://www.deluxeblogtips.com/meta-box/). If you don't have that installed, this Extension is useless. If you click on the link that shows with the error message you will go to a new page "Required Plugin" to install the Meta Box plugin.
+This plugin is an Extension for the [Meta Box plugin](http://metabox.io). If you don't have that installed, this Extension is useless. If you click on the link that shows with the error message you will go to a new page "Required Plugin" to install the Meta Box plugin.
 
 ### I don't like the output on my Single Post, can I change anything?
 
@@ -76,13 +76,16 @@ This repo is open to _any_ kind of contributions.
 
 [Github](https://github.com/senlin) 
 
-[Google+](http://plus.google.com/+PietBos) 
-
 [WordPress](http://profiles.wordpress.org/senlin/) 
 
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2015.03.16
+
+* tested up to WP 4.2
+* bumped minimum required version up to WP 4.0
 
 ### 2014.08.15
 

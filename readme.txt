@@ -3,8 +3,8 @@ Contributors: senlin
 Donate link: http://so-wp.com/donations
 Tags: related posts
 Requires at least: 3.8
-Tested up to: 4.0
-Stable tag: 2014.08.15
+Tested up to: 4.2
+Stable tag: 2015.03.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,11 +72,11 @@ Yes, since 2014.02.12 I have added a Settings Page where you can change the titl
 
 = I have not added any Related Posts, but the plugin shows the current post as Related Posts =
 
-First update to the latest version (2014.07.27). If after updating it still shows, then you need to uncheck the checkbox that shows under your Post.
+First update to the latest version. If after updating it still shows, then you need to uncheck the checkbox that shows under your Post.
 
 = Why is the plugin showing an error message after activation? =
 
-This plugin is an Extension for the [Meta Box plugin](http://www.deluxeblogtips.com/meta-box/). If you don't have that installed, this Extension is useless. If you click on the link that shows with the error message you will go to a new page "Required Plugin" to install the Meta Box plugin.
+This plugin is an Extension for the [Meta Box plugin](http://metabox.io). If you don't have that installed, this Extension is useless. If you click on the link that shows with the error message you will go to a new page "Required Plugin" to install the Meta Box plugin.
 
 = I don't like the output on my Single Post, can I change anything? =
 
@@ -93,6 +93,11 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 4. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
+
+= 2015.03.16 =
+
+* tested up to WP 4.2
+* bumped minimum required version up to WP 4.0
 
 = 2014.08.15 =
 
