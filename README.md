@@ -1,6 +1,6 @@
 # SO Related Posts
 
-###### Last updated on 2015.03.16
+###### Last updated on 2015.04.09
 ###### requires at least WordPress 4.0
 ###### tested up to WordPress 4.2
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -13,7 +13,7 @@ The SO Related Posts plugin puts you in control on what really is related conten
 
 ## Description
 
-The SO Related Posts plugin is an Extension for the fantastic [Meta Box plugin](https://github.com/rilwis/meta-box) by [Rilwis](https://github.com/rilwis/) and puts you in control on what really is related content. 
+The SO Related Posts plugin is an Extension for the fantastic [Meta Box plugin](https://github.com/rilwis/meta-box) and puts you in control on what really is related content. 
 
 With the plugin installed you will find a Related Posts box underneath the Post Editor. Here you will see a checkbox which you can use to turn showing the Related Posts on or off as well as a neat dropdown menu that shows up to 999 of your published Posts.
 
@@ -31,7 +31,7 @@ For a while already I have been breeding on how to make a Related Posts plugin t
 
 Instead I was thinking that it would be much more flexible too if the user can choose his/her own Related Posts from a simple Posts drop down menu.
 
-Among heaps of other very useful fields, the [Meta Box plugin](http://wordpress.org/plugins/meta-box/) by [Rilwis](http://profiles.wordpress.org/rilwis/) comes  with both a Post field and a Repeater field. I have combined these two and made it so that you can now show as many Related Posts as you want underneath the current Post. 
+Among heaps of other very useful fields, the [Meta Box plugin](http://metabox.io) comes  with both a Post field and a Repeater field. I have combined these two and made it so that you can now show as many Related Posts as you want underneath the current Post. 
 
 The SO Related Posts metabox uses the [Select2](http://ivaynberg.github.io/select2/) script which results in really beautiful and functional drop down menus. Credits for this functionality must all go to Rilwis as this is already baked in the Meta Box plugin.
 
@@ -81,6 +81,10 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2015.04.09
+
+* changed logos
 
 ### 2015.03.16
 

@@ -2,9 +2,9 @@
 Contributors: senlin
 Donate link: http://so-wp.com/donations
 Tags: related posts
-Requires at least: 3.8
+Requires at least: 4.0
 Tested up to: 4.2
-Stable tag: 2015.03.16
+Stable tag: 2015.04.09
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ The SO Related Posts plugin puts you in control on what really is related conten
 
 == Description ==
 
-The SO Related Posts plugin is an Extension for the fantastic [Meta Box plugin](http://wordpress.org/plugins/meta-box/) by [Rilwis](http://profiles.wordpress.org/rilwis/) and puts you in control on what really is related content. 
+The SO Related Posts plugin is an Extension for the fantastic [Meta Box plugin](http://wordpress.org/plugins/meta-box/) and puts you in control on what really is related content. 
 
 With the plugin installed you will find a Related Posts box underneath the Post Editor. Here you will see a checkbox which you can use to turn showing the Related Posts on or off as well as a neat dropdown menu that shows up to 999 of your published Posts.
 
@@ -32,7 +32,7 @@ For a while already I have been breeding on how to make a Related Posts plugin t
 
 Instead I was thinking that it would be much more flexible too if the user can choose his/her own Related Posts from a simple Posts drop down menu.
 
-Among heaps of other very useful fields, the [Meta Box plugin](http://wordpress.org/plugins/meta-box/) by [Rilwis](http://profiles.wordpress.org/rilwis/) comes  with both a Post field and a Repeater field. I have combined these two and made it so that you can now show as many Related Posts as you want underneath the current Post. 
+Among heaps of other very useful fields, the [Meta Box plugin](http://wordpress.org/plugins/meta-box/) comes  with both a Post field and a Repeater field. I have combined these two and made it so that you can now show as many Related Posts as you want underneath the current Post. 
 
 The SO Related Posts metabox uses the [Select2](http://ivaynberg.github.io/select2/) script which results in really beautiful and functional drop down menus. Credits for this functionality must all go to Rilwis as this is already baked in the Meta Box plugin.
 
@@ -93,6 +93,10 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 4. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
+
+= 2015.04.09 =
+
+* changed logos
 
 = 2015.03.16 =
 
