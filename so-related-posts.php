@@ -3,7 +3,7 @@
  * Plugin Name: SO Related Posts
  * Plugin URI: http://so-wp.com/?p=63
  * Description: The SO Related Posts plugin puts you in control on what really is related content. No more front end database queries that slow your site down, the work is all done on the back end.
- * Version: 2015.04.09
+ * Version: 2015.04.23
  * Author: Piet Bos
  * Author URI: http://senlinonline.com
  * Text Domain: so-related-posts
@@ -133,7 +133,7 @@ class SORP_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SORP_VERSION', '2015.04.09' );
+		define( 'SORP_VERSION', '2015.04.23' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SORP_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );

@@ -8,10 +8,10 @@
  *
  * @package    TGM-Plugin-Activation
  * @subpackage Example
- * @version    2.4.0
- * @author     Thomas Griffin <thomasgriffinmedia.com>
- * @author     Gary Jones <gamajo.com>
- * @copyright  Copyright (c) 2014, Thomas Griffin
+ * @version    2.4.1
+ * @author     Thomas Griffin
+ * @author     Gary Jones
+ * @copyright  Copyright (c) 2011, Thomas Griffin
  * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
  * @link       https://github.com/thomasgriffin/TGM-Plugin-Activation
  */
@@ -59,7 +59,7 @@ function sorp_register_required_plugin() {
      * end of each line for what each argument will be.
      */
     $config = array(
-        'id'           => 'tgmpa',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+        'id'           => 'sorp_tgmpa',                 // Unique ID for hashing notices for multiple instances of TGMPA.
         'default_path' => '',                      // Default absolute path to pre-packaged plugins.
         'menu'         => 'install-required-plugin', // Menu slug.
         'has_notices'  => true,                    // Show admin notices or not.
