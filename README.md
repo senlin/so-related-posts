@@ -1,8 +1,8 @@
 # SO Related Posts
 
-###### Last updated on 2015.04.23
+###### Last updated on 2015.06.17
 ###### requires at least WordPress 4.0
-###### tested up to WordPress 4.2
+###### tested up to WordPress 4.3-alpha
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](http://wordpress.org/plugins/so-related-posts) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=63)
@@ -81,6 +81,10 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2015.06.17
+
+* added new MetaBox feature of sort_clone 
 
 ### 2015.04.23
 

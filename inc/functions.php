@@ -12,6 +12,7 @@
  * Register meta box
  *
  * @since 2014.01.06
+ * @modified 2015.06.17 - added new MetaBox feature of sort_clone
  */
 function so_register_meta_boxes( $meta_boxes )
 {
@@ -52,7 +53,8 @@ function so_register_meta_boxes( $meta_boxes )
 					'post_status' => 'publish',
 					'posts_per_page' => '999',
 				),
-				'clone' => true
+				'clone' => true,
+				'sort_clone' => true,
 			)
 		)
 	);

@@ -3,8 +3,8 @@ Contributors: senlin
 Donate link: http://so-wp.com/donations
 Tags: related posts
 Requires at least: 4.0
-Tested up to: 4.2
-Stable tag: 2015.04.23
+Tested up to: 4.3-alpha
+Stable tag: 2015.06.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -93,6 +93,10 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 4. SO Related Posts output: you can style it to your liking.
 
 == Changelog ==
+
+= 2015.06.17 =
+
+* added new MetaBox feature of sort_clone 
 
 = 2015.04.23 =
 
