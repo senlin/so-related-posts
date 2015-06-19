@@ -1,6 +1,6 @@
 # SO Related Posts
 
-###### Last updated on 2015.06.17
+###### Last updated on 2015.06.19
 ###### requires at least WordPress 4.0
 ###### tested up to WordPress 4.3-alpha
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -19,11 +19,13 @@ With the plugin installed you will find a Related Posts box underneath the Post 
 
 On the frontend the Related Posts are shown in their own class with an unordered list, right after `the_content()`. The class will use the styling of your theme and you can style it further to your own liking. 
 
-Since 2014.01.20 I added a method to install the Meta Box plugin (where this extension depends on), instantly from within your website.
+Since v1.1.0 (2014.01.20) I added a method to install the Meta Box plugin (where this extension depends on), instantly from within your website.
 
-Since 2014.02.12 I have added a Settings Page where you can change the default title "Related Posts" into something of your liking.
+Since v1.3.0 (2014.02.12) I have added a Settings Page where you can change the default title "Related Posts" into something of your liking.
 
-Since 2014.03.23 I have added a checkbox with which you can turn the Related Posts on or off per Post
+Since v1.3.2 (2014.03.23) I have added a checkbox with which you can turn the Related Posts on or off per Post
+
+Since v1.3.4 (2014.04.04) there is a premium version available with more built in options, such as custom styling from within the plugin and the possibility to add thumbnails. More information via [SO PLUS](https://senlinonline.com/plus/plugin/so-related-posts-plus/).
 
 ### Background
 
@@ -41,7 +43,7 @@ On the Settings Page you can change the title that shows on the front end above 
 
 ### Can I change the default title?
 
-Yes, since 2014.02.12 I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts. More options are available with the [SO Related Posts PLUS](https://senlinonline.com/plus/plugin/so-related-posts-plus/) plugin.
+Yes, since v1.3.0 (2014.02.12) I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts. More options are available with the [SO Related Posts PLUS](https://senlinonline.com/plus/plugin/so-related-posts-plus/) plugin.
 
 ### I have not added any Related Posts, but the plugin shows the current post as Related Posts
 
@@ -82,90 +84,111 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
-### 2015.06.17
+### 1.4.1
 
+* date: 2015.06.19
+* revert to [semantic versioning](http://semver.org/)  
+
+### 1.4.0
+
+* date: 2015.06.17
 * added new MetaBox feature of sort_clone 
 
-### 2015.04.23
+### 1.3.1
 
+* date: 2015.04.23
 * update TGM Plugin Activation class to 2.4.1 which fixes reported [XSS vulnerability](http://wptavern.com/xss-vulnerability-what-to-do-if-you-buy-or-sell-items-on-themeforest-and-codecanyon) 
 
-### 2015.04.09
+### 1.3.10
 
+* date: 2015.04.09
 * changed logos
 
-### 2015.03.16
+### 1.3.9
 
+* date: 2015.03.16
 * tested up to WP 4.2
 * bumped minimum required version up to WP 4.0
 
-### 2014.08.15
+### 1.3.8
 
+* date: 2014.08.15
 * remove function that disables auto-activation of Jetpack's related posts module -> doesn't work, stop trying, waste of time
 
-### 2014.07.27
+### 1.3.7
 
+* date: 2014.07.27
 * add wpml-config.xml file to be able to translate the title on sites that have WPML installed
 * increase min. required WP version to 3.8
 
-### 2014.04.17
+### 1.3.6
 
+* date: 2014.04.17
 * added filter to prevent Jetpack related posts module from auto-activating
 * move minimum WP version up to 3.7
 * modify default settings function
 
-### 2014.04.09
+### 1.3.5
 
+* date: 2014.04.09
 * updated TGM Plugin Activation class to 2.4
 * update language files
 
-### 2014.04.04
+### 1.3.4
 
+* date: 2014.04.04
 * added SO PLUS reference and discount coupon
 * update language files
 
-### 2014.04.03
+### 1.3.3
 
+* date: 2014.04.03
 * fix title bug
 
-### 2014.03.23
+### 1.3.2
 
+* date: 2014.03.23
 * add checkbox to turn Related Posts on/off per post without losing the Posts you already have set. (default = off)
 
-### 2014.02.20
+### 1.3.1
 
+* date: 2014.02.20
 * bugfix, set default output title if no title has been filled in
 
-### 2014.02.12
+### 1.3.0
 
+* date: 2014.02.12
 * add settings page to enable changing the title output on the front end
 * update language files
 * update SO WP icon
 
-### 2014.02.09
+### 1.2.0
 
-* improve so_related_posts_output content filter:
-* by changing priority from 1 to 5
+* date: 2014.02.09
+* change priority from 1 to 5 to improve so_related_posts_output content filter
 * add conditional is_main_query()
 * unset foreach call
-* escape text/url/title-strings
+* security fix: escape text/url/title-strings
 
-### 2014.01.24
+### 1.1.1
 
+* date: 2014.01.24
 * add Dutch language files (.po/.mo)
 * add .pot file
 
-### 2014.01.20
+### 1.1.0
 
-* added Development branch
+* date: 2014.01.20
 * integrated TGM Plugin Activation class by Thomas Griffin - https://github.com/thomasgriffin/TGM-Plugin-Activation
 
-### 2014.01.07
+### 1.0.1
 
+* date: 2014.01.07
 * added "Please select..." placeholder text
 
-### 2014.01.06
+### 1.0.0
 
+* date: 2014.01.06
 * first release
 
 ## Screenshots
