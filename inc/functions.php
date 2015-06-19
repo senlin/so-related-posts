@@ -22,7 +22,7 @@ function so_register_meta_boxes( $meta_boxes )
 	$meta_boxes[] = array(
 		'id' => 'so_related_posts',
 		'title' => __( 'Related Posts', 'so-related-posts' ),
-		'pages' => array( 'post' ),
+		'post_types' => array( 'post' ),
 		'context' => 'normal',
 		'priority' => 'high',
 		'autosave' => true,
@@ -81,9 +81,9 @@ function so_related_posts_output( $content ) {
 		$options = get_option( 'sorp_options' );
 		$sorp_title = $options['sorp_title'];
 
-		if( $so_show_related_posts == 1 && ! empty( $so_related_posts ) ) {
+		if ( $so_show_related_posts == 1 && ! empty( $so_related_posts ) ) {
 		
-			if( ! empty( $sorp_title ) ) {
+			if ( ! empty( $sorp_title ) ) {
 				$content .= '<div class="so-related-posts"><h4>' . $sorp_title . '</h4><ul class="related-posts">';
 			} else {
 				$content .= '<div class="so-related-posts"><h4>' . __( 'Related Posts', 'so-related-posts' ) . '</h4><ul class="related-posts">';

@@ -87,7 +87,8 @@ This repo is open to _any_ kind of contributions.
 ### 1.4.1
 
 * date: 2015.06.19
-* revert to [semantic versioning](http://semver.org/)  
+* revert to [semantic versioning](http://semver.org/)
+* modify metabox registration replace deprecated `pages` with `post_types`
 
 ### 1.4.0
 

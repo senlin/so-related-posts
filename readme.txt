@@ -97,7 +97,8 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 = 1.4.1 =
 
 * date: 2015.06.19
-* revert to [semantic versioning](http://semver.org/)  
+* revert to [semantic versioning](http://semver.org/)
+* modify metabox registration replace deprecated `pages` with `post_types`
 
 = 1.4.0 =
 
