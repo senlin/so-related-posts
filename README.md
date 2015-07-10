@@ -1,6 +1,6 @@
 # SO Related Posts
 
-[![plugin version](https://img.shields.io/wordpress/plugin/v/so-mobile-map-widget.svg)](http://wordpress.org/plugins/so-related-posts)
+[![plugin version](https://img.shields.io/wordpress/plugin/v/so-related-posts.svg)](http://wordpress.org/plugins/so-related-posts)
 
 ###### Last updated on 2015.07.07
 ###### requires at least WordPress 4.0
