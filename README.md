@@ -1,6 +1,8 @@
 # SO Related Posts
 
-###### Last updated on 2015.06.19
+[![plugin version](https://img.shields.io/wordpress/plugin/v/so-mobile-map-widget.svg)](http://wordpress.org/plugins/so-related-posts)
+
+###### Last updated on 2015.07.07
 ###### requires at least WordPress 4.0
 ###### tested up to WordPress 4.3-alpha
 ###### Author: [Piet Bos](https://github.com/senlin)
