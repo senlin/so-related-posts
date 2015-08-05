@@ -1,15 +1,13 @@
 <?php
 /**
  * Render the Plugin options form
- * @since 2.0.0
- * @modified 2014.04.04 to add SO PLUS reference
  */
 function sorp_render_form() { ?>
 
 	<div class="wrap">
 		
 		<!-- Display Plugin Header, and Description -->
-		<h2><?php _e( 'SO Related Posts Settings', 'so-related-posts' ); ?></h2>
+		<h1><?php _e( 'SO Related Posts Settings', 'so-related-posts' ); ?></h1>
 		
 		<p><?php _e( 'Below you can change the title that shows above the list of Related Posts.', 'so-related-posts' ); ?></p>
 			
