@@ -2,7 +2,7 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-related-posts.svg)](http://wordpress.org/plugins/so-related-posts)
 
-###### Last updated on 2015.08.05
+###### Last updated on 2015.08.12
 ###### requires at least WordPress 4.0
 ###### tested up to WordPress 4.3
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -85,6 +85,10 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 1.4.3 (2015.08.12)
+
+* TWEAK: header settings page; only showed half logo after 1.4.2 update 
 
 ### 1.4.2 (2015.08.05)
 
