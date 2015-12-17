@@ -3,9 +3,9 @@
  * Plugin Name: SO Related Posts
  * Plugin URI: http://so-wp.com/?p=63
  * Description: The SO Related Posts plugin puts you in control on what really is related content. No more front end database queries that slow your site down, the work is all done on the back end.
- * Version: 1.4.3
+ * Version: 1.5.0
  * Author: SO WP
- * Author URI: http://senlinonline.com
+ * Author URI: http://so-wp.com
  * Text Domain: so-related-posts
  * Domain Path: /languages
  *

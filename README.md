@@ -2,7 +2,7 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-related-posts.svg)](http://wordpress.org/plugins/so-related-posts)
 
-###### Last updated on 2015.08.12
+###### Last updated on 2015.12.17
 ###### requires at least WordPress 4.0
 ###### tested up to WordPress 4.4
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -85,6 +85,10 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 1.5.0 (2015.12.17)
+
+* update TGM-Plugin-Activation class to 2.5.2 fixes [issue #4](https://github.com/senlin/so-related-posts/issues/4)
 
 ### 1.4.3 (2015.08.12)
 

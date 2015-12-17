@@ -94,6 +94,10 @@ Please open an issue on [Github](https://github.com/senlin/so-related-posts/issu
 
 == Changelog ==
 
+= 1.5.0 (2015.12.17) =
+
+* update TGM-Plugin-Activation class to 2.5.2 fixes [issue #4](https://github.com/senlin/so-related-posts/issues/4)
+
 = 1.4.3 (2015.08.12) =
 
 * TWEAK: header settings page; only showed half logo after 1.4.2 update 
