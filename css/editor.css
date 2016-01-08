@@ -1,0 +1,10 @@
+/**
+ * Editor styles for SO Related Posts PLUS plugin
+ * 
+ * @since 14.03.30
+ */
+#post-body #SO_related_posts .rwmb-select-advanced {
+    height: auto;
+    max-width: 90%;
+    min-width: 50%;
+}

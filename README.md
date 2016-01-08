@@ -2,50 +2,46 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-related-posts.svg)](http://wordpress.org/plugins/so-related-posts)
 
-###### Last updated on 2015.12.17
+###### Last updated on 2016.01.08
 ###### requires at least WordPress 4.0
-###### tested up to WordPress 4.4
+###### tested up to WordPress 4.4.1
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](http://wordpress.org/plugins/so-related-posts) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=63)
-
-##### [SO Related Posts PLUS](https://senlinonline.com/plus/plugin/so-related-posts-plus/)
 
 The SO Related Posts plugin puts you in control on what really is related content.
 
 ## Description
 
-The SO Related Posts plugin is an Extension for the fantastic [Meta Box plugin](https://github.com/rilwis/meta-box) and puts you in control on what really is related content. 
+The SO Related Posts plugin is an Extension for the [Meta Box plugin](http://wordpress.org/plugins/meta-box/) and puts you in control on what really is related content. 
 
 With the plugin installed you will find a Related Posts box underneath the Post Editor. Here you will see a checkbox which you can use to turn showing the Related Posts on or off as well as a neat dropdown menu that shows up to 999 of your published Posts.
 
-On the frontend the Related Posts are shown in their own class with an unordered list, right after `the_content()`. The class will use the styling of your theme and you can style it further to your own liking. 
+On the frontend the Related Posts are shown in their own class with an unordered list, right after `the_content()`. The class will use the styling of your theme and you can style it further to your own liking.
 
-Since v1.1.0 (2014.01.20) I added a method to install the Meta Box plugin (where this extension depends on), instantly from within your website.
+Since v1.1.0 I integrated the [TGM Plugin Activation Class](https://github.com/TGMPA/TGM-Plugin-Activation/) to install the Meta Box plugin (where this extension depends on) instantly from within your website.
 
-Since v1.3.0 (2014.02.12) I have added a Settings Page where you can change the default title "Related Posts" into something of your liking.
+Since v1.3.0 I have added a Settings Page where you can change the default title "Related Posts" into something of your liking.
 
-Since v1.3.2 (2014.03.23) I have added a checkbox with which you can turn the Related Posts on or off per Post
+Since v1.3.2 I have added a checkbox with which you can turn the Related Posts on or off per Post
 
-Since v1.3.4 (2014.04.04) there is a premium version available with more built in options, such as custom styling from within the plugin and the possibility to add thumbnails. More information via [SO PLUS](https://senlinonline.com/plus/plugin/so-related-posts-plus/).
+Since v2.0 I have integrated the options that previously were only available in the PLUS version. The latter has been retired. The functionality we added are custom styling and the possibility to add the featured image to the related posts output.
 
 ### Background
 
-For a while already I have been breeding on how to make a Related Posts plugin that doesn't query the database n times looking for related posts by tags, categories or what not. Most of the existing Related Posts plugin have an incredible (negative) impact on your site speed, so the benefits don't outweigh the costs.
+The idea for this plugin came to me as I was thinking about an alternative method to make a Related Posts plugin that doesn't query the database n times looking for related posts by tags, categories or what not. Most of the existing Related Posts plugin have an incredible (negative) impact on your site speed, so the benefits don't outweigh the costs.
 
-Instead I was thinking that it would be much more flexible too if the user can choose his/her own Related Posts from a simple Posts drop down menu.
+I thought that it would be much more flexible if the user can choose his/her own Related Posts from a simple Posts drop down menu.
 
-Among heaps of other very useful fields, the [Meta Box plugin](http://metabox.io) comes  with both a Post field and a Repeater field. I have combined these two and made it so that you can now show as many Related Posts as you want underneath the current Post. 
+Among heaps of other very useful fields, the [Meta Box plugin](http://wordpress.org/plugins/meta-box/) comes  with both a Post field and a Repeater field. I have combined these two and made it so that you can now show as many Related Posts as you want underneath the current Post. 
 
-The SO Related Posts metabox uses the [Select2](http://ivaynberg.github.io/select2/) script which results in really beautiful and functional drop down menus. Credits for this functionality must all go to Rilwis as this is already baked in the Meta Box plugin.
-
-On the Settings Page you can change the title that shows on the front end above the list of Related Posts.
+On the Settings Page you can change the title that shows on the front end above the list of Related Posts. You can also choose whether or not to include a small thumb of the Featured Image. This thumb is dynamically resized using the [Aqua Resizer](https://github.com/sy4mil/Aqua-Resizer/)-script. Last but not least you can style the output of the SO Related Posts right from the settings page and I have included some samples to get you started! Have a look at the Screenshots (at the bottom of this README file) to see the Settings.
 
 ## Frequently Asked Questions
 
 ### Can I change the default title?
 
-Yes, since v1.3.0 (2014.02.12) I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts. More options are available with the [SO Related Posts PLUS](https://senlinonline.com/plus/plugin/so-related-posts-plus/) plugin.
+Yes, since v1.3.0 I have added a Settings Page where you can change the title that shows on the front end above the list of Related Posts.
 
 ### I have not added any Related Posts, but the plugin shows the current post as Related Posts
 
@@ -57,7 +53,7 @@ This plugin is an Extension for the [Meta Box plugin](http://metabox.io). If you
 
 ### I don't like the output on my Single Post, can I change anything?
 
-Yes, you can. The output comes in its own class (`so-related-posts`) and in it you will find an `h4` for the title and an unordered list which has a class of `related-posts`. In your theme's `style.css` you can add any styling as you please.
+Yes, you can. Via the Settings page you can add your own styling. These styles will only be added to the page(s) where the plugin is active.
 
 ### I have an issue with this plugin, where can I get support?
 
@@ -85,6 +81,14 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2.0 (2016.01.08)
+
+* integrate plugin with features (featured image thumbnail, styling) that were previously only available in the Plus version.
+* regenerate .pot file and Dutch translation
+* replace icon on settings page
+* rewrite readme files
+* changed screenshots
 
 ### 1.5.0 (2015.12.17)
 

@@ -1,0 +1,813 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: SO Related Posts\n"
+"POT-Creation-Date: 2016-01-08 18:05+0800\n"
+"PO-Revision-Date: 2016-01-08 18:14+0800\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: so-related-posts.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: nl\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/settings.php:10
+msgid "SO Related Posts Settings"
+msgstr "SO Related posts instellingen"
+
+#: admin/settings.php:12
+msgid ""
+"Below you can change the title that shows above the list of Related Posts."
+msgstr ""
+"Hieronder vindt u de titel die toont boven de lijst Gerelateerde berichten "
+"kan veranderen."
+
+#: admin/settings.php:27
+msgid "Title above Related Posts list"
+msgstr "Titel boven Gerelateerde berichten lijst"
+
+#: admin/settings.php:32
+msgid ""
+"Change the title above the Related Posts list into something of your liking"
+msgstr ""
+"Verander de titel boven de lijst Gerelateerde berichten in iets van uw gading"
+
+#: admin/settings.php:40
+msgid "Thumbnails"
+msgstr "Miniaturen"
+
+#: admin/settings.php:46
+msgid "Check to show thumbnails"
+msgstr "Controleren om thumbnails te tonen"
+
+#: admin/settings.php:47
+msgid ""
+"Check this box if you would like to show the thumbnails of the Related Posts."
+"<br />Please keep in mind that your Post(s) better have a Featured Image for "
+"this to look good. The image will be dynamically resized at 50x50px."
+msgstr ""
+"Schakel dit vakje in als u wilt om de miniaturen van de verwante berichten "
+"te tonen. <br /> Houd er rekening mee dat uw bericht (s) beter een Featured "
+"Image voor deze er goed uitzien. Het beeld zal dynamisch worden aangepast "
+"aan 50x50px."
+
+#: admin/settings.php:54
+msgid "Style the output right here."
+msgstr "Stijl van de output hier."
+
+#: admin/settings.php:61
+#, php-format
+msgid ""
+"The output of the SO Related Posts plugin comes with the following classes "
+"that you can adjust to your heart's content. %s"
+msgstr ""
+"De output van de SO Gerelateerde berichten plugin wordt geleverd met de "
+"volgende klassen die u kunt aanpassen aan de inhoud van uw hart. %s"
+
+#: admin/settings.php:70
+#, php-format
+msgid ""
+"As an example you could use the following styling if you choose to show the "
+"thumbs: %s"
+msgstr ""
+"Als voorbeeld zou je de volgende styling gebruiken als u ervoor kiest om de "
+"duimen te tonen:%s"
+
+#: admin/settings.php:78
+#, php-format
+msgid ""
+"Another simple example to show the Related Posts as a numbered list without "
+"thumbs can be like this: %s"
+msgstr ""
+"Een ander eenvoudig voorbeeld aan de Gerelateerde berichten als een "
+"genummerde lijst zonder duimen te tonen kan worden als deze:%s"
+
+#: admin/settings.php:91
+msgid "More Features"
+msgstr "Binnenkort komen er nog meer Instellingen!"
+
+#: admin/settings.php:95
+#, php-format
+msgid ""
+"We are planning to roll out a few more features soon!<br />You can let us "
+"know any feature on your wish-list <a href=\"%s\" target=\"_blank\">via our "
+"plugin page on Github</a>."
+msgstr ""
+"We zijn van plan om de uitrol van een paar meer functies binnenkort! <br /> "
+"U kunt ons laten weten welke functie op uw verlanglijst <a href=“%s” "
+"target=“_blank”>via onze plugin pagina Github.</a>"
+
+#: admin/settings.php:105
+msgid "Database Options"
+msgstr "Database Opties"
+
+#: admin/settings.php:110
+msgid "Restore defaults upon plugin deactivation/reactivation"
+msgstr "Restore defaults op plugin deactiveren / reactivering"
+
+#: admin/settings.php:111
+msgid ""
+"Only check this if you want to reset plugin settings upon Plugin reactivation"
+msgstr ""
+"Alleen aanvingen als je de plugin instellingen wilt recette bij Plugin "
+"reactivering"
+
+#: admin/settings.php:119
+msgid "Save Settings"
+msgstr "Instellingen opslaan"
+
+#: admin/settings.php:130
+#, php-format
+msgid ""
+"If you have found this plugin at all useful, please give it a favourable "
+"rating in the <a href=\"%s\" title=\"Rate this plugin!\">WordPress Plugin "
+"Repository</a>."
+msgstr ""
+"Wanneer je deze plugin handig vindt, geef het dan een gunstige waardering in "
+"de <a href=“%s” title=“Geef deze plugin een waardering!”>Wordpress Plugin "
+"Repository</a>."
+
+#: admin/settings.php:139
+#, php-format
+msgid ""
+"If you have an issue with this plugin or want to leave a feature request, "
+"please note that I give <a href=\"%s\" title=\"Support or Feature Requests "
+"via Github\">support via Github</a> only."
+msgstr ""
+"Wanneer je een probleem hebt met deze plugin of een feature rekest wilt "
+"doen, houd er dan rekening mee dat ik de plugin alleen <a href=“%s” "
+"title=“Ondersteuning of Feature Requests alleen via Github”>ondersteun via "
+"Github</a>."
+
+#: admin/settings.php:148
+msgid "About the Author"
+msgstr "Over de auteur"
+
+#: admin/settings.php:155
+#, php-format
+msgid ""
+"Hi, my name is Piet Bos, I hope you like this plugin! Please check out any "
+"of my other plugins on <a href=\"%s\" title=\"SO WP Plugins\">SO WP Plugins</"
+"a>. You can find out more information about me via the following links:"
+msgstr ""
+"Hoi, mijn naam is Piet Bos, hopelijk vind je dit een handige plugin! Kijk "
+"ook eens naar mijn andere plugins via <a href=“%s” title=“SO WP Plugins”>SO "
+"WP Plugins</a>. Je kan meer informatie over mij vinden via de onderstaande "
+"links:"
+
+#: admin/settings.php:162
+msgid "Senlin Online"
+msgstr "Senlin Online"
+
+#: admin/settings.php:163
+msgid "WP Tips"
+msgstr "WP Tips"
+
+#: admin/settings.php:164
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: admin/settings.php:165
+msgid "Github"
+msgstr "Github"
+
+#: admin/settings.php:166
+msgid "WordPress.org Profile"
+msgstr "WordPress.org Profiel"
+
+#: inc/class-tgm-plugin-activation.php:333
+msgid "Install Required Plugins"
+msgstr "Installeer vereiste plugins"
+
+#: inc/class-tgm-plugin-activation.php:334
+msgid "Install Plugins"
+msgstr "Installeer plugins"
+
+#: inc/class-tgm-plugin-activation.php:335 inc/required-plugin.php:74
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Plugin %s wordt ge&#239;nstalleerd."
+
+#: inc/class-tgm-plugin-activation.php:336 inc/required-plugin.php:75
+msgid "Something went wrong with the plugin API."
+msgstr "Er ging iets fout met de plugin API."
+
+#: inc/class-tgm-plugin-activation.php:338
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:353 inc/required-plugin.php:80
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:358
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "Er is een update beschikbaar voor: %1$s."
+msgstr[1] "Er zijn updates beschikbaar voor: %1$s."
+
+#: inc/class-tgm-plugin-activation.php:363
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:368 inc/required-plugin.php:78
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:378
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:383 inc/required-plugin.php:82
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Beginnen met het installeren van de plugin"
+msgstr[1] "Beginnen met het installeren van de plugins"
+
+#: inc/class-tgm-plugin-activation.php:388
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Begin het updaten plugin"
+msgstr[1] "Begin het updaten van de plugins"
+
+#: inc/class-tgm-plugin-activation.php:393 inc/required-plugin.php:83
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Begin activeren plugin"
+msgstr[1] "Begin activeren plugins"
+
+#: inc/class-tgm-plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr "Ga terug naar de vereiste plugins installatie"
+
+#: inc/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr "Terug naar Dashboard"
+
+#: inc/class-tgm-plugin-activation.php:399
+#: inc/class-tgm-plugin-activation.php:3029
+msgid "Plugin activated successfully."
+msgstr "Plugin met succes geactiveerd."
+
+#: inc/class-tgm-plugin-activation.php:400
+#: inc/class-tgm-plugin-activation.php:2832
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Plugin met succes geactiveerd."
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Geen actie ondernomen. Plugin %1$s was al actief."
+
+#: inc/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Plugin niet geactiveerd. Een recentere versie van %s is nodig. Update de "
+"plugin."
+
+#: inc/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Alle plugins zijn geïnstalleerd en succesvol geactiveerd. %1$s"
+
+#: inc/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr "Negeer deze melding"
+
+#: inc/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr "Neem contact op met de beheerder van deze website voor ondersteuning."
+
+#: inc/class-tgm-plugin-activation.php:520
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+"Deze plugin moet geüpdate worden om gebruikt te kunnen worden met dit thema."
+
+#: inc/class-tgm-plugin-activation.php:521
+msgid "Update Required"
+msgstr ""
+"<span>Update vereist.</span> Om te spelen de media moet u uw browser "
+"bijwerkt naar een recente versie of update uw <a href=‘//get.adobe.com/"
+"flashplayer/' target=‘_blank’>Flash plugin</a>."
+
+#: inc/class-tgm-plugin-activation.php:635
+msgid "Set the parent_slug config variable instead."
+msgstr "Stel in plaats daarvan de parent_slug config variabele in."
+
+#: inc/class-tgm-plugin-activation.php:828
+#: inc/class-tgm-plugin-activation.php:3438
+msgid "Return to the Dashboard"
+msgstr "Terug naar het Dashboard"
+
+#: inc/class-tgm-plugin-activation.php:935
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+"Het plugin pakket bevat geen map met de gewenste slag en hernomen werkte "
+"niet."
+
+#: inc/class-tgm-plugin-activation.php:935
+#: inc/class-tgm-plugin-activation.php:938
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"Neem contact op met de maker van de plugin en vraag hen om hun plugin pakket "
+"samen te stellen volgens de Wordpress richtlijnen."
+
+#: inc/class-tgm-plugin-activation.php:938
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"Het externe pluginpakket bestaat uit meer dan één bestand, maar de bestanden "
+"staan niet in één map."
+
+#: inc/class-tgm-plugin-activation.php:1116
+#: inc/class-tgm-plugin-activation.php:2828
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "en"
+
+#: inc/class-tgm-plugin-activation.php:1881
+#, php-format
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: inc/class-tgm-plugin-activation.php:2167
+msgid "Required"
+msgstr "Vereist"
+
+#: inc/class-tgm-plugin-activation.php:2170
+msgid "Recommended"
+msgstr "Aanbevolen"
+
+#: inc/class-tgm-plugin-activation.php:2186
+msgid "WordPress Repository"
+msgstr "Wordpress Repository"
+
+#: inc/class-tgm-plugin-activation.php:2189
+msgid "External Source"
+msgstr "Bron"
+
+#: inc/class-tgm-plugin-activation.php:2192
+msgid "Pre-Packaged"
+msgstr "Pre-Packaged"
+
+#: inc/class-tgm-plugin-activation.php:2209
+msgid "Not Installed"
+msgstr "Niet geïnstalleerd"
+
+#: inc/class-tgm-plugin-activation.php:2213
+msgid "Installed But Not Activated"
+msgstr "Geïnstalleerd maar niet geactiveerd"
+
+#: inc/class-tgm-plugin-activation.php:2215
+msgid "Active"
+msgstr "Actief"
+
+#: inc/class-tgm-plugin-activation.php:2221
+msgid "Required Update not Available"
+msgstr "De benodigde update is niet beschikbaar"
+
+#: inc/class-tgm-plugin-activation.php:2224
+msgid "Requires Update"
+msgstr "Update vereist"
+
+#: inc/class-tgm-plugin-activation.php:2227
+msgid "Update recommended"
+msgstr "Update aanbevolen"
+
+#: inc/class-tgm-plugin-activation.php:2235
+#, php-format
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/class-tgm-plugin-activation.php:2280
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Alle <span class=\"count\">(%s)</span>"
+msgstr[1] "Alle <span class=\"count\">(%s)</span>"
+
+#: inc/class-tgm-plugin-activation.php:2283
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Installeer <span class=\"count\">(%s)</span>"
+msgstr[1] "Installeer <span class=\"count\">(%s)</span>"
+
+#: inc/class-tgm-plugin-activation.php:2286
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Update beschikbaar <span class=“count”>(%s)</span>"
+msgstr[1] "Update beschikbaar <span class=“count”>(%s)</span>"
+
+#: inc/class-tgm-plugin-activation.php:2289
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Activeer <span class=“count”>(%s)</span>"
+msgstr[1] "Activeer <span class=“count”>(%s)</span>"
+
+#: inc/class-tgm-plugin-activation.php:2371
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "onbekend"
+
+#: inc/class-tgm-plugin-activation.php:2379
+msgid "Installed version:"
+msgstr "Geïnstalleerde versie:"
+
+#: inc/class-tgm-plugin-activation.php:2387
+msgid "Minimum required version:"
+msgstr "Verplicht"
+
+#: inc/class-tgm-plugin-activation.php:2399
+msgid "Available version:"
+msgstr "Er zijn geen plugins beschikbaar om te installeren."
+
+#: inc/class-tgm-plugin-activation.php:2422
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+"Er zijn geen plugins om te installeren, te updaten of te activeren. <a href="
+"\"%1$s\">Terug naar het dashboard</a>"
+
+#: inc/class-tgm-plugin-activation.php:2436
+msgid "Plugin"
+msgstr "Plugin"
+
+#: inc/class-tgm-plugin-activation.php:2437
+msgid "Source"
+msgstr "Bron"
+
+#: inc/class-tgm-plugin-activation.php:2438
+msgid "Type"
+msgstr "Type"
+
+#: inc/class-tgm-plugin-activation.php:2442
+msgid "Version"
+msgstr "Versie"
+
+#: inc/class-tgm-plugin-activation.php:2443
+msgid "Status"
+msgstr "Status"
+
+#: inc/class-tgm-plugin-activation.php:2491
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr "Installeer %2$s"
+
+#: inc/class-tgm-plugin-activation.php:2495
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr "Update %2$s"
+
+#: inc/class-tgm-plugin-activation.php:2500
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr "Activeer %2$s"
+
+#: inc/class-tgm-plugin-activation.php:2570
+msgid "Upgrade message from the plugin author:"
+msgstr "Upgrade melding van de plugin-auteur:"
+
+#: inc/class-tgm-plugin-activation.php:2603
+msgid "Install"
+msgstr "Installeren"
+
+#: inc/class-tgm-plugin-activation.php:2609
+msgid "Update"
+msgstr "Voorbeeld Bijwerken"
+
+#: inc/class-tgm-plugin-activation.php:2612
+msgid "Activate"
+msgstr "Activeren"
+
+#: inc/class-tgm-plugin-activation.php:2643
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+"Er zijn geen plugins geselecteerd om te installeren. Geen actie ondernomen."
+
+#: inc/class-tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+"Er zijn geen plugins geselecteerd om te updaten. Geen actie ondernomen."
+
+#: inc/class-tgm-plugin-activation.php:2681
+msgid "No plugins are available to be installed at this time."
+msgstr "Er zijn op dit moment geen plugins die geïnstalleerd kunnen worden."
+
+#: inc/class-tgm-plugin-activation.php:2683
+msgid "No plugins are available to be updated at this time."
+msgstr "Er zijn momenteel geen plugins beschikbaar om bij te werken."
+
+#: inc/class-tgm-plugin-activation.php:2788
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+"Er zijn geen plugins geselecteerd om te activeren. Geen actie ondernomen."
+
+#: inc/class-tgm-plugin-activation.php:2814
+msgid "No plugins are available to be activated at this time."
+msgstr "Er zijn op dit moment geen plugins die geactiveerd kunnen worden."
+
+#: inc/class-tgm-plugin-activation.php:3028
+msgid "Plugin activation failed."
+msgstr "Plugin activering mislukt."
+
+#: inc/class-tgm-plugin-activation.php:3362
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Plugin bijwerken %1$s (%2$d/%3$d)"
+
+#: inc/class-tgm-plugin-activation.php:3364
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+"Er is een fout opgetreden tijdens het installeren van %1$s: <strong>%2$s</"
+"strong>."
+
+#: inc/class-tgm-plugin-activation.php:3365
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "De installatie van %1$s is mislukt."
+
+#: inc/class-tgm-plugin-activation.php:3369
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Het installatie- en activeringsproces is gestart. Dit proces kan enige tijd "
+"in beslag nemen bij sommige hosts, een ogenblik geduld…"
+
+#: inc/class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s geïnstalleerd en succesvol geactiveerd."
+
+#: inc/class-tgm-plugin-activation.php:3370
+#: inc/class-tgm-plugin-activation.php:3376
+msgid "Show Details"
+msgstr "Details tonen"
+
+#: inc/class-tgm-plugin-activation.php:3370
+#: inc/class-tgm-plugin-activation.php:3376
+msgid "Hide Details"
+msgstr "Details verbergen"
+
+#: inc/class-tgm-plugin-activation.php:3371
+msgid "All installations and activations have been completed."
+msgstr "Alle installaties en activeringen zijn uitgevoerd."
+
+#: inc/class-tgm-plugin-activation.php:3372
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Installeren en Activeren van Plugin %1$s (%2$d/%3$d)"
+
+#: inc/class-tgm-plugin-activation.php:3375
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Het installatieproces is gestart. Dit proces kan enige tijd in beslag nemen "
+"bij sommige hosts, een ogenblik geduld…"
+
+#: inc/class-tgm-plugin-activation.php:3376
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s is succesvol geïnstalleerd."
+
+#: inc/class-tgm-plugin-activation.php:3377
+msgid "All installations have been completed."
+msgstr "Alle installaties zijn uitgevoerd"
+
+#: inc/class-tgm-plugin-activation.php:3378
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Installeer Plugin %1$s (%2$d/%3$d)"
+
+#: inc/functions.php:24 inc/functions.php:91 so-related-posts.php:270
+msgid "Related Posts"
+msgstr "Gerelateerde Berichten"
+
+#: inc/functions.php:35
+msgid "Tick the box to show Related Posts"
+msgstr "Vink het vakje aan Gerelateerde berichten tonen"
+
+#: inc/functions.php:42
+msgid "Choose one or more Related Post(s) you want to show."
+msgstr "Kies één of meer gerelateerde Berichten die u wilt laten zien."
+
+#: inc/functions.php:51
+msgid "Please select..."
+msgstr "Selecteer"
+
+#: inc/required-plugin.php:72
+msgid "Install Required Plugin"
+msgstr "Installeer Vereiste Plugin"
+
+#: inc/required-plugin.php:73
+msgid "Required Plugin"
+msgstr "Vereiste Plugin"
+
+#: inc/required-plugin.php:76
+#, php-format
+msgid "The SO Related Posts plugin requires the following plugin: %1$s."
+msgid_plural ""
+"The SO Related Posts plugin requires the following plugins: %1$s."
+msgstr[0] "De SO Related Posts plugin vereist de volgende plugin: %1$s."
+msgstr[1] "De SO Related Posts plugin vereist de volgende plugins: %1$s."
+
+#: inc/required-plugin.php:77
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugin te "
+"installeren. Neem contact op met de beheerder van deze site voor hulp "
+"hiermee."
+msgstr[1] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugins te "
+"installeren. Neem contact op met de beheerder van deze site voor hulp "
+"hiermee."
+
+#: inc/required-plugin.php:79
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugin te activeren. "
+"Neem contact op met de beheerder van deze site voor hulp hiermee."
+msgstr[1] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugins te activeren. "
+"Neem contact op met de beheerder van deze site voor hulp hiermee."
+
+#: inc/required-plugin.php:81
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugin up te daten. "
+"Neem contact op met de beheerder van deze site voor hulp hiermee."
+msgstr[1] ""
+"Sorry, maar je hebt niet de juiste permissies om de %s plugins up te daten. "
+"Neem contact op met de beheerder van deze site voor hulp hiermee."
+
+#: inc/required-plugin.php:84
+msgid "Return to the Plugins page"
+msgstr "Terug naar %s"
+
+#: inc/required-plugin.php:85
+msgid "The Meta Box plugin has been activated successfully."
+msgstr "De Meta Box plugin is succesvol geactiveerd."
+
+#: inc/required-plugin.php:86
+#, php-format
+msgid "The Meta Box plugin has been successfully installed and activated. %s"
+msgstr "De Meta Box plugin is geïnstalleerd en geactiveerd. %s"
+
+#: so-related-posts.php:79
+#, php-format
+msgid ""
+"<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></"
+"div>"
+msgstr ""
+"<div class=“error”><p>%1$s</p><p><i>%2$s</i> is gedeactiveerd.</p></div>"
+
+#: so-related-posts.php:218
+#, php-format
+msgid ""
+"The <strong>SO Related Posts plugin</strong> only works if you have the <a "
+"href=\"%s\">Meta Box</a> plugin installed."
+msgstr ""
+"De <strong>SO Gerelateerde berichten plugin</strong> werkt alleen als je de "
+"<a href=“%s”>Meta Box</a> plugin geïnstalleerd."
+
+#: so-related-posts.php:349
+msgid "Settings"
+msgstr "Instellingen"
+
+#. Plugin Name of the plugin/theme
+msgid "SO Related Posts"
+msgstr "SO Related Posts"
+
+#. Plugin URI of the plugin/theme
+msgid "http://so-wp.com/?p=63"
+msgstr "http://so-wp.com/?p=63"
+
+#. Description of the plugin/theme
+msgid ""
+"The SO Related Posts plugin puts you in control on what really is related "
+"content. No more front end database queries that slow your site down, the "
+"work is all done on the back end."
+msgstr ""
+"De SO Gerelateerde berichten plugin geeft u de controle op wat echt is "
+"gerelateerde inhoud. Geen front-end database queries dat uw site vertragen, "
+"is het werk al gedaan op de back-end."
+
+#. Author of the plugin/theme
+msgid "SO WP"
+msgstr ""
+"De %s <a href=\"https://wordpress.org/\" target=\"_blank\">WordPress</a> "
+"website is gebouwd op <a href=\"http://so-wp/themes/soblossom\" title="
+"\"Gebruik soblossom om een fantastische WordPress website te bouwen!\" "
+"target=\"_blank\">soblossom</a>. "
+
+#. Author URI of the plugin/theme
+msgid "http://so-wp.com"
+msgstr "http://so-wp.com"

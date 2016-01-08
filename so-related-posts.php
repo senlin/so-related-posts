@@ -3,13 +3,13 @@
  * Plugin Name: SO Related Posts
  * Plugin URI: http://so-wp.com/?p=63
  * Description: The SO Related Posts plugin puts you in control on what really is related content. No more front end database queries that slow your site down, the work is all done on the back end.
- * Version: 1.5.0
+ * Version: 2.0.0
  * Author: SO WP
  * Author URI: http://so-wp.com
  * Text Domain: so-related-posts
  * Domain Path: /languages
  *
- * Copyright 2013-2015 Piet Bos (piet@so-wp.com)
+ * Copyright 2013-2016 Piet Bos (piet@so-wp.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@
  * Prevent direct access to files
  * via http://mikejolley.com/2013/08/keeping-your-shit-secure-whilst-developing-for-wordpress/
  *
- * @since 2014.01.06
+ * @since 1.0
  */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -41,8 +41,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * 
  * adapted from example by Thomas Scholz (@toscho) http://wordpress.stackexchange.com/a/95183/2015, Version: 2013.03.31, Licence: MIT (http://opensource.org/licenses/MIT)
  *
- * @since 2014.01.06
- * @modified 2015.03.16 (bump up to WP 4.0)
+ * @since 1.0
+ * @modified 1.3.9 (bump up to WP 4.0)
  */
 
 //Only do this when on the Plugins page.
@@ -85,8 +85,8 @@ function so_check_admin_notices()
 
 /**
  *
- * @since 2014.01.06
- * @modified 2014.02.12
+ * @since 1.0
+ * @modified 1.3.0
  */
 class SORP_Load {
 
@@ -117,7 +117,7 @@ class SORP_Load {
 	/**
 	 * Init plugin options to white list our options
 	 *
-	 * @since 2014.02.12
+	 * @since 1.3.0
 	 */
 	function init() {
 		
@@ -128,12 +128,12 @@ class SORP_Load {
 	/**
 	 * Defines constants used by the plugin.
 	 *
-	 * @since 2014.02.12
+	 * @since 1.3.0
 	 */
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SORP_VERSION', '1.4.3' );
+		define( 'SORP_VERSION', '2.0.0' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SORP_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -152,7 +152,7 @@ class SORP_Load {
 	/**
 	 * Loads the translation file.
 	 *
-	 * @since 2014.01.06
+	 * @since 1.0
 	 */
 	function i18n() {
 
@@ -163,7 +163,7 @@ class SORP_Load {
 	/**
 	 * Loads the initial files needed by the plugin.
 	 *
-	 * @since 2014.02.12
+	 * @since 1.3.0
 	 */
 	function includes() {
 
@@ -174,7 +174,7 @@ class SORP_Load {
 	/**
 	 * Loads the admin functions and files.
 	 *
-	 * @since 2014.02.12
+	 * @since 1.3.0
 	 */
 	function admin() {
 
@@ -196,7 +196,7 @@ $sorp_load = new SORP_Load();
  *
  * modified using http://wpengineer.com/1657/check-if-required-plugin-is-active/ and the _no_wpml_warning function (of WPML)
  *
- * @since 2014.01.06
+ * @since 1.0
  */
 
 $plugins = get_option( 'active_plugins' );
@@ -226,14 +226,21 @@ function sorp_no_meta_box_warning() {
 /**
  * Include the TGM Activation Class
  *
- * @since 2014.01.20
+ * @since 1.1.0
  */
 require_once dirname( __FILE__ ) . '/inc/required-plugin.php';
 
 /**
+ * Include Aqua Resizer for dynamically resizing images
+ *
+ * @since 2.0.0
+ */
+require dirname( __FILE__ ) . '/inc/aq_resizer.php';
+
+/**
  * Register activation/deactivation hooks
- * @since 2014.02.12
- * @modified 2014.04.17
+ * @since 1.3.0
+ * @modified 1.3.6
  */
 register_activation_hook( __FILE__, 'sorp_add_defaults' ); 
 register_uninstall_hook( __FILE__, 'sorp_delete_plugin_options' );
@@ -250,8 +257,8 @@ function sorp_add_options_page() {
 
 /**
  * Define default option settings
- * @since 2014.02.12
- * @modified 2014.04.17
+ * @since 1.3.0
+ * @modified 1.3.6
  */
 function sorp_add_defaults() {
 	
@@ -261,6 +268,8 @@ function sorp_add_defaults() {
 		
 		$arr = array(
 			'sorp_title' => __( 'Related Posts', 'so-related-posts' ),
+			'sorp_showthumbs' => '',
+			'sorp_styling' => '',
 			'chk_default_options_db' => ''
 		);
 		
@@ -270,7 +279,7 @@ function sorp_add_defaults() {
 
 /**
  * Delete options table entries ONLY when plugin deactivated AND deleted 
- * @since 2014.02.12
+ * @since 1.3.0
  */
 function sorp_delete_plugin_options() {
 	
@@ -280,7 +289,7 @@ function sorp_delete_plugin_options() {
 
 /**
  * Register and enqueue the settings stylesheet
- * @since 2014.02.12
+ * @since 1.3.0
  */
 function sorp_load_settings_style() {
 
@@ -291,8 +300,24 @@ function sorp_load_settings_style() {
 }
 
 /**
+ * Adds the Meta Box stylesheet when appropriate
+ * @source: http://themefoundation.com/wordpress-meta-boxes-guide/
+ *
+ * @since 1.3.2
+ */
+function sorp_post_editor_styles(){
+	global $typenow;
+	if( $typenow == 'post' ) {
+		wp_enqueue_style( 'sorp_meta_box_styles', SORP_URI . 'css/editor.css' );
+	}
+}
+add_action( 'admin_print_styles', 'sorp_post_editor_styles' );
+
+
+
+/**
  * Set-up Action and Filter Hooks
- * @since 2014.02.12
+ * @since 1.3.0
  */
 add_filter( 'plugin_action_links', 'sorp_plugin_action_links', 10, 2 );
 
@@ -300,19 +325,23 @@ add_filter( 'rwmb_meta_boxes', 'so_register_meta_boxes' );
 
 add_filter ( 'the_content', 'so_related_posts_output', 5 );
 
+add_action( 'wp_head', 'so_related_posts_styling' );
+
 /**
  * Sanitize and validate input. Accepts an array, return a sanitized array.
- * @since 2014.02.12
+ * @since 1.3.0
  */
 function sorp_validate_options($input) {
 	// strip html from textboxes
 	$input['sorp_title'] =  wp_filter_nohtml_kses( $input['sorp_title'] ); // Sanitize input (strip html tags, and escape characters)
+	$valid_input['sorp_showthumbs'] = ( isset( $input['sorp_showthumbs'] ) && true == $input['sorp_showthumbs'] ? true : false );
+	$input['sorp_styling'] =  wp_filter_nohtml_kses( $input['sorp_styling'] );
 	return $input;
 }
 
 /**
  * Display a Settings link on the main Plugins page
- * @since 2014.02.12
+ * @since 1.3.0
  */
 function sorp_plugin_action_links( $links, $file ) {
 
@@ -329,7 +358,7 @@ function sorp_plugin_action_links( $links, $file ) {
  * Jetpack instructions to prevent any of their modules from auto-activating
  *
  * @var array
- * @since 2014.04.13
+ * @since 1.3.6
  * @source: jetpack.me/2013/10/07/do-not-automatically-activate-a-jetpack-module/
  */
 add_filter( 'jetpack_get_default_modules', 'sorp_disable_jetpack_related_posts' );

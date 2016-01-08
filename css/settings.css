@@ -1,24 +1,26 @@
 /**
  * Settings Page styles
  * 
- * @since 2.0.0
- * @modified 2014.04.04 to add discount styling
+ * @since 1.3.0
  */
 .wrap > h1 {
     background-image: url("../images/so-icon.png");
     background-position: 0 0;
     background-repeat: no-repeat;
+    background-size: 32px auto;
     display: block;
     min-height: 32px;
     padding-left: 40px !important;
-    padding-top: 7px;
+    padding-top: 2px;
 }
-.discount {
-    color: #008CBA;
+#sorp-settings label {
+    cursor: default;
+}
+#sorp-settings pre {
+    color: #00008B;
+}
+textarea#sorp-styling {
     font-family: Consolas,Monaco,monospace;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.5px;
 }
 .rate-this-plugin {
 	color: #0074A2;
@@ -56,4 +58,9 @@
 .author.postbox .inside li {
     float: left;
     width: 50%;
+}
+@media screen and (max-width: 20.0625em) { /* max-width 321px */
+	#sorp-settings pre {
+		overflow: auto;
+	}
 }

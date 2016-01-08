@@ -11,7 +11,7 @@ function sorp_render_form() { ?>
 		
 		<p><?php _e( 'Below you can change the title that shows above the list of Related Posts.', 'so-related-posts' ); ?></p>
 			
-		<div id="sorrp-settings">
+		<div id="sorp-settings">
 	
 			<!-- Beginning of the Plugin Options Form -->
 			<form method="post" action="options.php">
@@ -37,25 +37,69 @@ function sorp_render_form() { ?>
 
 					<tr valign="top">
 						<th scope="row">
-							<label for="sorp-options">
-								<?php printf( __( 'Get more options with<br /><a href="%s" title="SO PLUS Premium WordPress Plugins by Senlin Online">SO Related Posts PLUS</a>!', 'so-related-posts' ),
-									'https://senlinonline.com/plus/plugin/so-related-posts-plus/'
-								); ?>
-							</label>
+							<label for="sorp-showthumbs"><?php _e( 'Thumbnails', 'so-related-posts' ); ?></label>
+						</th>
+						
+						<td>
+							
+							<input name="sorp_options[sorp_showthumbs]" type="checkbox" id="sorp-showthumbs" value="1" <?php if ( isset($options['sorp_showthumbs'] ) ) { checked( '1', $options['sorp_showthumbs'] ); } ?> />
+							<?php _e( 'Check to show thumbnails', 'so-related-posts' ); ?>
+							<p class="description"><?php _e( 'Check this box if you would like to show the thumbnails of the Related Posts.<br />Please keep in mind that your Post(s) better have a Featured Image for this to look good. The image will be dynamically resized at 50x50px.', 'so-related-posts' ); ?></p>
+							
+						</td>
+					</tr>
+
+					<tr valign="top">
+						<th scope="row">
+							<label for="sorp-styling"><?php _e( 'Style the output right here.', 'so-related-posts' ); ?></label>
 						</th>
 
 						<td>
+							<textarea name="sorp_options[sorp_styling]" type="text" id="sorp-styling" class="text-area" rows="10" cols="70"><?php echo $options['sorp_styling']; ?></textarea>
 							<p class="description">
 								<?php 
-									printf( __( 'Upgrade now with coupon code: %1$s for %2$s!', 'so-related-posts' ),
-										'<span class="discount">SWITCH2PLUS</span>',
-										'<strong>30% discount</strong>'
+									printf( __( 'The output of the SO Related Posts plugin comes with the following classes that you can adjust to your heart\'s content. %s', 'so-related-posts' ),
+										'<br /><ul><li>div container: <code>.so-related-posts {}</code></li><li>title: <code>.so-related-posts h4 {}</code></li><li>unordered list: <code>ul.related-posts {}</code></li><li>list-items: <code>ul.related-posts li {}</code></li><li>anchor: <code>ul.related-posts li a {}</code></li><li>image (if you show the thumbnails): <code>img.related-post-thumb {}</code></li><li>post title: <code>ul.related-posts li span.title {}</code></li></ul>'
+									);
+								
+								?>
+							</p>
+							
+							<p class="description">
+								<?php
+									printf( __( 'As an example you could use the following styling if you choose to show the thumbs: %s', 'so-related-posts' ),
+										'<br /><pre>.related-posts { list-style: none; margin-left: 0; }<br />.related-posts li { clear: both; margin-bottom: 10px; min-height: 50px; width: 100%; }<br />img.related-post-thumb { float: left; margin-right: 3%; }<br />.related-posts .title { line-height: 40px; }</pre>'
 									);
 								?>
 							</p>
+
+							<p class="description">
+								<?php
+									printf( __( 'Another simple example to show the Related Posts as a numbered list without thumbs can be like this: %s', 'so-related-posts' ),
+										'<br /><pre>.related-posts { list-style: decimal; }<br />.related-posts a { text-decoration: none; }<br />.related-posts a:hover { text-decoration: underline; }</pre>'
+									);
+								?>
+							</p>
+							
+							<input type="hidden" name="action" value="update" />
+							<input type="hidden" name="page_options" value="<?php echo $options['sorp_styling']; ?>" />
+						</td>
+					</tr>
+
+					<tr valign="top">
+						<th scope="row">
+							<label for="sorp-options"><?php _e( 'More Features', 'so-related-posts' ); ?></label>
+						</th>
+
+						<td>
+							<p class="description"><?php printf( __( 'We are planning to roll out a few more features soon!<br />You can let us know any feature on your wish-list <a href="%s" target="_blank">via our plugin page on Github</a>.', 'so-related-posts' ), 'https://github.com/senlin/so-related-posts/issues' ); ?></p>
 						</td>
 					</tr>
 						
+					<tr valign="top">
+						<hr />
+					</tr>
+
 					<tr valign="top">
 						<th scope="row">
 							<label for="sorp-db-chk"><?php _e( 'Database Options', 'so-related-posts' ); ?></label>
@@ -78,7 +122,7 @@ function sorp_render_form() { ?>
 			
 			</form>
 		
-		</div><!-- #sorpp-settings -->
+		</div><!-- #sorp-settings -->
 
 		<p class="rate-this-plugin">
 			<?php
