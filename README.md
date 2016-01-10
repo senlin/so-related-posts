@@ -2,7 +2,7 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-related-posts.svg)](http://wordpress.org/plugins/so-related-posts)
 
-###### Last updated on 2016.01.08
+###### Last updated on 2016.01.10
 ###### requires at least WordPress 4.0
 ###### tested up to WordPress 4.4.1
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -25,7 +25,7 @@ Since v1.3.0 I have added a Settings Page where you can change the default title
 
 Since v1.3.2 I have added a checkbox with which you can turn the Related Posts on or off per Post
 
-Since v2.0 I have integrated the options that previously were only available in the PLUS version. The latter has been retired. The functionality we added are custom styling and the possibility to add the featured image to the related posts output.
+Since v2.0.0 I have integrated the options that previously were only available in the PLUS version. The latter has been retired. The functionality we added are custom styling and the possibility to add the featured image to the related posts output.
 
 ### Background
 
@@ -82,7 +82,11 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
-### 2.0 (2016.01.08)
+### 2.0.1 (2016.01.10)
+
+* improve codebase; thanks to tip from [Julien Maury](https://github.com/TweetPressFr)
+
+### 2.0.0 (2016.01.08)
 
 * integrate plugin with features (featured image thumbnail, styling) that were previously only available in the Plus version.
 * regenerate .pot file and Dutch translation

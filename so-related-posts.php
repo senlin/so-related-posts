@@ -3,7 +3,7 @@
  * Plugin Name: SO Related Posts
  * Plugin URI: http://so-wp.com/?p=63
  * Description: The SO Related Posts plugin puts you in control on what really is related content. No more front end database queries that slow your site down, the work is all done on the back end.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: SO WP
  * Author URI: http://so-wp.com
  * Text Domain: so-related-posts
@@ -98,19 +98,19 @@ class SORP_Load {
 		$sorp = new stdClass;
 
 		/* Set the init. */
-		add_action( 'admin_init', array( &$this, 'init' ), 1 );
+		add_action( 'admin_init', array( $this, 'init' ), 1 );
 
 		/* Set the constants needed by the plugin. */
-		add_action( 'plugins_loaded', array( &$this, 'constants' ), 2 );
+		add_action( 'plugins_loaded', array( $this, 'constants' ), 2 );
 
 		/* Internationalize the text strings used. */
-		add_action( 'plugins_loaded', array( &$this, 'i18n' ), 3 );
+		add_action( 'plugins_loaded', array( $this, 'i18n' ), 3 );
 
 		/* Load the functions files. */
-		add_action( 'plugins_loaded', array( &$this, 'includes' ), 4 );
+		add_action( 'plugins_loaded', array( $this, 'includes' ), 4 );
 
 		/* Load the admin files. */
-		add_action( 'plugins_loaded', array( &$this, 'admin' ), 5 );
+		add_action( 'plugins_loaded', array( $this, 'admin' ), 5 );
 
 	}
 
@@ -133,7 +133,7 @@ class SORP_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SORP_VERSION', '2.0.0' );
+		define( 'SORP_VERSION', '2.0.1' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SORP_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
