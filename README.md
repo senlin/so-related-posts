@@ -2,6 +2,8 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-related-posts.svg)](http://wordpress.org/plugins/so-related-posts)
 
+### May 14, 2016: No longer in active development, use at own risk
+
 ###### Last updated on 2016.01.10
 ###### requires at least WordPress 4.0
 ###### tested up to WordPress 4.4.1
